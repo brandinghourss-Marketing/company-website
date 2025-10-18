@@ -1,0 +1,5 @@
+.tagLine {
+  box-shadow: 
+    /* Top Inset Shadow */ inset 0 10px 5px -10px rgba(0, 0, 0, 0.5),
+    /* Bottom Inset Shadow */ inset 0 -10px 5px -10px rgba(0, 0, 0, 0.5);
+}
