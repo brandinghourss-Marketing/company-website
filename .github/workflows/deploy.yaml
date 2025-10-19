@@ -1,33 +1,14 @@
-# ... (Steps for Checkout, Setup Node.js, Install, and Build remain the same)
-
-# 2. Deploy Static Assets (Next.js 'out' folder content)
-- name: 📂 Deploy Next.js Static Files
-  uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-  with:
-    server: ${{ secrets.FTP_HOST }}
-    username: ${{ secrets.FTP_USERNAME }}
-    password: ${{ secrets.FTP_PASSWORD }}
-    local-dir: ./out/
-    server-dir: public_html/
-    protocol: ftps # Use ftps or ftp based on what Hostinger provides
-
-# 3. Deploy Mail Handler (from the root folder)
+# 3. Deploy Mail Handler (from the repository root)
 - name: 📧 Deploy Mail Handler
   uses: SamKirkland/FTP-Deploy-Action@v4.3.6
   with:
     server: ${{ secrets.FTP_HOST }}
     username: ${{ secrets.FTP_USERNAME }}
     password: ${{ secrets.FTP_PASSWORD }}
-    # Local directory is the repository root
     local-dir: ./
-    # Server directory is the public folder
     server-dir: public_html/
     protocol: ftps
-    # Crucial: Only upload the PHP file and exclude everything else
+    # 1. EXCLUDE ALL files first
     exclude: "**/*"
+    # 2. THEN explicitly INCLUDE the PHP file
     include: "mail_handler.php"
-
-    # IMPORTANT: The 'include' pattern here is a special feature of the
-    # FTP-Deploy-Action. You must use 'exclude: "**/*"' to ignore all
-    # files, and then 'include: "mail_handler.php"' to explicitly
-    # upload only that file from the root directory.
