@@ -1,16 +1,10 @@
-import Collaborate from "@/Components/Landing/Collaborate";
-import Landing from "@/Components/Landing/Landing";
-import Services from "@/Components/Landing/Services";
-import TagLine from "@/Components/Landing/TagLine";
+import LandingPage from "@/Components/Landing";
 import React from "react";
 
 const page = () => {
   return (
-    <main className="px-4 md:px-20 lg:px-50">
-      <Landing />
-      <TagLine />
-      <Services />
-      <Collaborate />
+    <main className="px-2 sm:px-4 md:px-12 lg:px-20 xl:px-50 grid gap-10 sm:gap-16 md:gap-20">
+      <LandingPage />
     </main>
   );
 };

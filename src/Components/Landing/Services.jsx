@@ -31,7 +31,7 @@ const servicesArr = [
     link: "/smo.png",
   },
   {
-    Title: "Paid Media Marketing / Lead Generation",
+    Title: "Paid Media Marketing | Lead Generation",
     Description:
       "Reach your audience faster and generate quality leads with targeted paid campaigns across platforms.",
     Pointers: [
@@ -46,7 +46,7 @@ const servicesArr = [
     link: "/paid-media.png",
   },
   {
-    Title: "Website Development / UI & UX",
+    Title: "Website Development | UI & UX",
     Description:
       "Build fast, intuitive, and visually stunning websites that drive engagement and conversions.",
     Pointers: [
@@ -76,7 +76,7 @@ const servicesArr = [
     link: "/branding.png",
   },
   {
-    Title: "Photography / Product Shoot",
+    Title: "Photography | Product Shoot",
     Description:
       "Showcase your products and brand story with high-quality, professional photography.",
     Pointers: [
@@ -93,7 +93,7 @@ const servicesArr = [
 ];
 const Services = () => {
   return (
-    <section className="py-20 grid gap-10">
+    <section className="grid gap-10">
       <h1 className="text-4xl grid">
         <strong>Services</strong>{" "}
         <span className="text-base">To help you grow</span>
@@ -118,7 +118,7 @@ export default Services;
 
 const Service = ({ Title, Description, Pointers, link }) => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 border-1 rounded-2xl">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 border-1 rounded-xl">
       <section className="flex items-center justify-center order-1 md:order-2">
         <img src={link} alt={Title} className="aspect-square w-100" />
       </section>
