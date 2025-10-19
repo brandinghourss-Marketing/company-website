@@ -39,9 +39,12 @@ const Header = () => {
         </nav>
       </section>
       <section className="hidden lg:block">
-        <button className="bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors">
+        <Link 
+          href="/contact"
+          className="bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors inline-block"
+        >
           Let's Collaborate!
-        </button>
+        </Link>
       </section>
       <section className="lg:hidden">
         <button
@@ -75,9 +78,12 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <button className="bg-[var(--brandColor)] text-xl text-white px-4 py-2 rounded-md hover:underline transition-colors mt-6 w-full">
+            <Link 
+              href="/contact"
+              className="bg-[var(--brandColor)] text-xl text-white px-4 py-2 rounded-md hover:underline transition-colors mt-6 w-full inline-block text-center"
+            >
               Let's Collaborate!
-            </button>
+            </Link>
           </nav>
         </section>
       </Modal>

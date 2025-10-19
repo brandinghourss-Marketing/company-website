@@ -17,6 +17,7 @@
     "title": "Services",
     "subtitle": "To help you grow",
     "buttonText": "Let's Collaborate!",
+    "buttonLink": "/contact",
     "items": [
       {
         "title": "Search Engine Optimization (SEO)",
@@ -100,7 +101,8 @@
   },
   "collaborate": {
     "text": "At <strong class='text-[var(--brandColor)]'>Branding Hours</strong>, design is more than aesthetics — it's strategy in motion. Every solution we craft is built to solve problems and inspire action.",
-    "buttonText": "Get in touch with us!"
+    "buttonText": "Get in touch with us!",
+    "buttonLink": "/contact"
   },
   "tools": {
     "subtitle": "TOOLS WE USE",
@@ -150,6 +152,7 @@
     "title": "Join <strong class='text-white'>Branding Hours</strong> where ideas turn into unforgettable brands. ✨",
     "description": "We live for creating magical brand experiences — from the first spark to the final reveal. If bold ideas, wild creativity, and a little chaos excite you, join the <strong class='text-white'>Branding Hours</strong> crew and be part of the magic.",
     "buttonText": "Contact Us",
+    "buttonLink": "/contact",
     "image": "/assets/landing/marketingTeam.png",
     "imageAlt": "Marketing Team"
   }

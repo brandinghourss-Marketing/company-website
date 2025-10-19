@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import { useContent } from "../../hooks/useContent";
 import { SkeletonText, SkeletonTitle } from "../UI/Skeleton";
 
@@ -32,6 +33,7 @@ const Services = () => {
           description={service.description}
           pointers={service.pointers}
           buttonText={content.buttonText}
+          buttonLink={content.buttonLink}
           image={service.image}
         />
       ))}
@@ -41,7 +43,7 @@ const Services = () => {
 
 export default Services;
 
-const Service = ({ title, description, pointers, buttonText, image }) => {
+const Service = ({ title, description, pointers, buttonText, buttonLink, image }) => {
   const textRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -83,9 +85,12 @@ const Service = ({ title, description, pointers, buttonText, image }) => {
             <li key={index}>{pointer}</li>
           ))}
         </ul>
-        <button className="w-fit bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors">
+        <Link 
+          href={buttonLink || "/contact"}
+          className="w-fit bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors inline-block text-center"
+        >
           {buttonText}
-        </button>
+        </Link>
       </section>
     </section>
   );

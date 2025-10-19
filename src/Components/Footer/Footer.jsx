@@ -12,7 +12,8 @@ const tabs = [
   { name: "About us", href: "/about" },
   //   { name: "Our Work", href: "/work" },
   { name: "Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 const Footer = () => {
   return (

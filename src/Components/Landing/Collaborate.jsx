@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useContent } from "../../hooks/useContent";
 import { SkeletonText } from "../UI/Skeleton";
 
@@ -19,9 +20,12 @@ const Collaborate = () => {
         className="text-2xl md:text-5xl"
         dangerouslySetInnerHTML={{ __html: content.text }}
       />
-      <button className="w-fit bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors">
+      <Link 
+        href={content.buttonLink || "/contact"}
+        className="w-fit bg-[var(--brandColor)] text-2xl text-white px-4 py-2 rounded-md hover:underline transition-colors inline-block"
+      >
         {content.buttonText}
-      </button>
+      </Link>
     </section>
   );
 };
