@@ -1,52 +1,33 @@
-name: Deploy Next.js Static Site to Hostinger
+# ... (Steps for Checkout, Setup Node.js, Install, and Build remain the same)
 
-on:
-  push:
-    branches:
-      - main # Trigger on push to the main branch
+# 2. Deploy Static Assets (Next.js 'out' folder content)
+- name: 📂 Deploy Next.js Static Files
+  uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+  with:
+    server: ${{ secrets.FTP_HOST }}
+    username: ${{ secrets.FTP_USERNAME }}
+    password: ${{ secrets.FTP_PASSWORD }}
+    local-dir: ./out/
+    server-dir: public_html/
+    protocol: ftps # Use ftps or ftp based on what Hostinger provides
 
-jobs:
-  web-deploy:
-    name: Build & Deploy
-    runs-on: ubuntu-latest
+# 3. Deploy Mail Handler (from the root folder)
+- name: 📧 Deploy Mail Handler
+  uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+  with:
+    server: ${{ secrets.FTP_HOST }}
+    username: ${{ secrets.FTP_USERNAME }}
+    password: ${{ secrets.FTP_PASSWORD }}
+    # Local directory is the repository root
+    local-dir: ./
+    # Server directory is the public folder
+    server-dir: public_html/
+    protocol: ftps
+    # Crucial: Only upload the PHP file and exclude everything else
+    exclude: "**/*"
+    include: "mail_handler.php"
 
-    steps:
-      - name: 🚚 Checkout Code
-        uses: actions/checkout@v4
-
-      # 1. Build Next.js Static Output
-      - name: 🟢 Setup Node.js Environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20" # Use a stable Node.js version
-
-      - name: 📦 Install Dependencies and Build
-        run: |
-          npm install
-          npm run build
-
-      # 2. Deploy Files via FTP
-      - name: 📂 Sync files to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          # Server Configuration
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-
-          # Target Directories
-          # The 'out' folder contains your static Next.js build output
-          local-dir: ./out/
-          # The Hostinger public folder
-          server-dir: public_html/
-
-          # Crucial: Upload the PHP mail handler from the repository root
-          # This line merges the file from the root into the final deployment
-          include: "mail_handler.php"
-
-          # Optional: Use ftps for better security if supported by Hostinger
-          protocol: ftps
-
-          # Clean up old files on the server that are no longer in 'out/'
-          # Use with caution! Only if you want a perfect mirror.
-          # ftp-cleanup: true
+    # IMPORTANT: The 'include' pattern here is a special feature of the
+    # FTP-Deploy-Action. You must use 'exclude: "**/*"' to ignore all
+    # files, and then 'include: "mail_handler.php"' to explicitly
+    # upload only that file from the root directory.
