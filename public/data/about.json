@@ -1,0 +1,41 @@
+{
+  "landing": {
+    "title": "What Happens When Creativity Meets Strategy — Only with Branding Hours!",
+    "subtitle": "#BuiltByBrandingHours",
+    "description": "Because every brand deserves its prime time."
+  },
+  "process": {
+    "title": "THE PROCESS",
+    "subtitle": "Where Strategy Meets Spark, And Magic Happens on Repeat.",
+    "steps": [
+      {
+        "question": "01. You Discovered Us ✨",
+        "answer": "You searched for something awesome — and Google led you right to us. Guess the algorithm knows good taste when it sees it 😉"
+      },
+      {
+        "question": "02. We Popped Up on Your Feed 👀",
+        "answer": "Maybe it was a thumb-stopping ad on Instagram, Facebook, or YouTube. (Yeah, we make those kinds of ads — for us and our clients!)"
+      },
+      {
+        "question": "03. You Heard the Buzz 🔥",
+        "answer": "Someone who's worked with Branding Hours couldn't keep it to themselves. Our work speaks loud — and our clients even louder."
+      }
+    ]
+  },
+  "vision": {
+    "title": "Our Vision",
+    "content": [
+      "At Branding Hours, we see a world where every local brand has the power to go global.",
+      "A world where creativity isn't just seen — it's felt, shared, and remembered.",
+      "We exist to turn bold ideas into brands people believe in.",
+      "To bridge the gap between dreams and digital growth.",
+      "To make every second of your brand's journey — its hour to shine.",
+      "Because the future belongs to brands that dare to stand out.",
+      "And we're here to make sure yours does — brilliantly. 🌍✨"
+    ],
+    "callToAction": {
+      "subtitle": "We've Got the Strategy. You've Got the Story. Let's Build It Together.",
+      "buttonText": "Contact Us Today"
+    }
+  }
+}

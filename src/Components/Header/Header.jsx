@@ -6,7 +6,8 @@ const tabs = [
   { name: "About us", href: "/about" },
   // { name: "Our Work", href: "/work" },
   { name: "Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
     <header className="p-4 px-2 sm:px-4 md:px-12 lg:px-20 xl:px-50 shadow-lg flex justify-between items-center sticky top-0 z-2 bg-[var(--background)]">
       <section>
         <Link href="/" className="flex gap-2 items-center justify-between">
-          <img src="/logo.png" alt="" className="w-[32px]" />
+          <img src="/assets/common/logo.png" alt="" className="w-[32px]" />
           <p className="whitespace-nowrap grid">
             <span className="text-xl font-semibold">Branding Hours</span>
             <span className="text-xs">Strategy | Time | Innovate</span>

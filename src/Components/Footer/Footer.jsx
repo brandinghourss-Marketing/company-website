@@ -22,7 +22,7 @@ const Footer = () => {
           href="/"
           className="flex gap-2 items-center justify-between w-max"
         >
-          <img src="/logo.png" alt="" className="w-[32px]" />
+          <img src="/assets/common/logo.png" alt="" className="w-[32px]" />
           <p className="whitespace-nowrap grid">
             <span className="text-xl font-semibold">Branding Hours</span>
             <span className="text-xs">Strategy | Time | Innovate</span>
