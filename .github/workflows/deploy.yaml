@@ -1,14 +1,60 @@
-# 3. Deploy Mail Handler (from the repository root)
-- name: 📧 Deploy Mail Handler
-  uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-  with:
-    server: ${{ secrets.FTP_HOST }}
-    username: ${{ secrets.FTP_USERNAME }}
-    password: ${{ secrets.FTP_PASSWORD }}
-    local-dir: ./
-    server-dir: public_html/
-    protocol: ftps
-    # 1. EXCLUDE ALL files first
-    exclude: "**/*"
-    # 2. THEN explicitly INCLUDE the PHP file
-    include: "mail_handler.php"
+name: Deploy Next.js Static Site to Hostinger
+
+on:
+  push:
+    branches:
+      - main # Triggers the deployment pipeline whenever code is pushed to the main branch
+
+jobs:
+  web-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Checkout Code
+        uses: actions/checkout@v4
+
+      # 1. Build Next.js Static Output
+      - name: 🟢 Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 📦 Install Dependencies and Build
+        run: |
+          npm install
+          npm run build
+
+      # 2. Deploy Static Assets (The Next.js 'out' folder)
+      # This step uploads the HTML, CSS, and JS files.
+      - name: 📂 Deploy Next.js Static Files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          local-dir: ./out/
+          server-dir: public_html/
+
+          # Use sftp with port 22 if Hostinger supports it (recommended for security)
+          protocol: ftps
+          port: 21 # Change to 22 if using SFTP
+
+      # 3. Deploy Mail Handler (The PHP file from the repository root)
+      # This step uploads ONLY the mail_handler.php file.
+      - name: 📧 Deploy Mail Handler
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          local-dir: ./
+          server-dir: public_html/
+          protocol: ftps
+          port: 21 # Change to 22 if using SFTP
+
+          # CRITICAL: Exclude everything from the repository root, then include only the PHP file.
+          exclude: "**/*"
+          include: "mail_handler.php"
