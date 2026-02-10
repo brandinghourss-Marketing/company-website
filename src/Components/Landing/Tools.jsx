@@ -1,73 +1,114 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap, useGSAP } from "@/lib/gsap";
 import { useContent } from "../../hooks/useContent";
 import { SkeletonText, SkeletonTitle } from "../UI/Skeleton";
+import { useFadeUp } from "../../hooks/useAnimations";
 
 const Tools = () => {
   const { content, loading } = useContent("landing", "tools");
-  const iconsRef = useRef([]);
+  const sectionRef = useRef(null);
+  const row1Ref = useRef(null);
+  const row2Ref = useRef(null);
+  const tween1Ref = useRef(null);
+  const tween2Ref = useRef(null);
 
-  useEffect(() => {
-    if (!content) return;
+  useFadeUp(sectionRef, "[data-fade-up]", { dependencies: [loading] });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = parseInt(entry.target.dataset.index);
-            setTimeout(() => {
-              entry.target.classList.add('animate');
-            }, index * 100);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
+  useGSAP(() => {
+    if (!row1Ref.current || !row2Ref.current || loading) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    iconsRef.current.forEach((icon) => {
-      if (icon) observer.observe(icon);
+    // Row 1: scroll left
+    tween1Ref.current = gsap.to(row1Ref.current, {
+      x: "-50%",
+      duration: 35,
+      repeat: -1,
+      ease: "none",
     });
 
-    return () => observer.disconnect();
-  }, [content]);
+    // Row 2: scroll right
+    tween2Ref.current = gsap.fromTo(
+      row2Ref.current,
+      { x: "-50%" },
+      { x: "0%", duration: 35, repeat: -1, ease: "none" }
+    );
+  }, { scope: sectionRef, dependencies: [loading] });
 
-  if (loading) return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <section className="grid grid-cols-3 gap-3 order-2 md:order-1">
-        {Array.from({ length: 9 }).map((_, i) => (
-          <div key={i} className="bg-gray-200 animate-pulse rounded-xl h-20" />
-        ))}
+  // Hover pause
+  const handleHover = (rowRef, tweenRef, pause) => {
+    if (tweenRef.current) {
+      if (pause) {
+        gsap.to(tweenRef.current, { timeScale: 0, duration: 0.5 });
+      } else {
+        gsap.to(tweenRef.current, { timeScale: 1, duration: 0.5 });
+      }
+    }
+  };
+
+  if (loading)
+    return (
+      <section className="py-24 md:py-32 lg:py-40 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24" style={{ background: "linear-gradient(135deg, #021430 0%, #0A2A5E 100%)" }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <SkeletonText lines={1} />
+          <SkeletonTitle />
+          <SkeletonText lines={2} />
+        </div>
       </section>
-      <section className="flex flex-col gap-5 justify-center order-1 md:order-2">
-        <SkeletonText lines={1} />
-        <SkeletonTitle />
-        <SkeletonText lines={3} />
-      </section>
-    </section>
-  );
+    );
+
+  // Duplicate icons for seamless infinite loop
+  const icons = content.icons;
+  const doubledIcons = [...icons, ...icons];
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <section className="grid grid-cols-3 gap-3 order-2 md:order-1">
-        {content.icons.map((icon, index) => (
-          <div
-            key={index}
-            ref={(el) => (iconsRef.current[index] = el)}
-            data-index={index}
-            className="p-2 sm:p-4 md:p-6 lg:p-10 bg-[var(--brandColor)] border-1 border-gray-200 rounded-xl flex items-center justify-center bubble-up"
-          >
-            <img src={icon} alt="" />
+    <section ref={sectionRef} className="py-24 md:py-32 lg:py-40 overflow-hidden" style={{ background: "linear-gradient(135deg, #021430 0%, #0A2A5E 100%)" }}>
+      {/* Text */}
+      <div className="text-center mb-16 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24">
+        <p data-fade-up className="section-label mb-4">{content.subtitle}</p>
+        <h2 data-fade-up className="text-display-lg text-white mb-4 max-w-3xl mx-auto">
+          {content.title}
+        </h2>
+      </div>
+
+      {/* Marquee rows */}
+      <div className="flex flex-col gap-4">
+        {/* Row 1 - scrolls left */}
+        <div
+          className="flex"
+          onMouseEnter={() => handleHover(row1Ref, tween1Ref, true)}
+          onMouseLeave={() => handleHover(row1Ref, tween1Ref, false)}
+        >
+          <div ref={row1Ref} className="flex gap-4 shrink-0">
+            {doubledIcons.map((icon, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/15 transition-all flex items-center justify-center w-40 h-20"
+              >
+                <img src={icon} alt="" className="max-h-10 max-w-full object-contain" loading="lazy" />
+              </div>
+            ))}
           </div>
-        ))}
-      </section>
-      <section className="flex flex-col gap-5 md:px-[50px_0px] justify-center order-1 md:order-2">
-        <h3 className="text-2xl">{content.subtitle}</h3>
-        <h1 className="text-4xl">{content.title}</h1>
-        <p 
-          className="text-lg"
-          dangerouslySetInnerHTML={{ __html: content.description }}
-        />
-      </section>
+        </div>
+
+        {/* Row 2 - scrolls right */}
+        <div
+          className="flex"
+          onMouseEnter={() => handleHover(row2Ref, tween2Ref, true)}
+          onMouseLeave={() => handleHover(row2Ref, tween2Ref, false)}
+        >
+          <div ref={row2Ref} className="flex gap-4 shrink-0">
+            {doubledIcons.map((icon, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/15 transition-all flex items-center justify-center w-40 h-20"
+              >
+                <img src={icon} alt="" className="max-h-10 max-w-full object-contain" loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

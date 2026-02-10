@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className="page-container min-h-screen flex items-center justify-center">
+    <main className="page-container min-h-screen flex items-center justify-center pt-28">
       <section className="peaceful-gradient max-w-2xl w-full text-center">
         <div className="mb-8">
           <div className="text-6xl mb-6">🎉</div>
           <h1 className="text-4xl font-bold mb-4">Thank You!</h1>
           <p className="text-xl text-gray-600 mb-6">
-            Your message has been sent successfully. We'll get back to you within 24 hours.
+            Your message has been sent successfully. We&apos;ll get back to you within 24 hours.
           </p>
           <p className="text-lg mb-8">
             In the meantime, feel free to explore our services or check out our latest work.
           </p>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"

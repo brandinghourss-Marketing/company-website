@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "label": "Our Work",
+    "title": "Projects That Speak For Themselves",
+    "description": "From e-commerce to education, we craft digital experiences that drive real results."
+  },
+  "projects": [
+    {
+      "name": "Ever Growwl",
+      "url": "https://www.evergrowwl.com/",
+      "category": "Pet Food & Nutrition",
+      "description": "Farm-fresh, natural dog treats and pet nutrition products."
+    },
+    {
+      "name": "Falcons Cart",
+      "url": "https://www.falconscart.com/",
+      "category": "E-commerce",
+      "description": "Dubai-based multi-category e-commerce marketplace."
+    },
+    {
+      "name": "ZENB",
+      "url": "https://zenb.ae/",
+      "category": "Fashion",
+      "description": "Elegant fashion retailer specializing in sophisticated dresses for women in the UAE."
+    },
+    {
+      "name": "Ikiriya",
+      "url": "https://ikiriya.com/",
+      "category": "Furniture & Decor",
+      "description": "Furniture store specializing in home furnishings and decor."
+    },
+    {
+      "name": "Cepora",
+      "url": "https://cepora.in/",
+      "category": "Luxury Fragrances",
+      "description": "Luxury fragrance retailer with exclusive perfumes and attars."
+    },
+    {
+      "name": "Cigar Conexion",
+      "url": "https://cigarconexion.in/",
+      "category": "Lifestyle",
+      "description": "Premium handmade cigar retailer with 100+ years of legacy."
+    },
+    {
+      "name": "Connecting Continents",
+      "url": "https://www.connectingcontinents.com/",
+      "category": "Real Estate",
+      "description": "Luxury real estate agency specializing in Dubai properties."
+    },
+    {
+      "name": "Phonics Explorer",
+      "url": "https://www.phonicsexplorer.in/",
+      "category": "Education",
+      "description": "Jolly Phonics teacher training and literacy workshops."
+    },
+    {
+      "name": "Pavani Power Tech",
+      "url": "https://www.pavanipowertech.com/",
+      "category": "Industrial",
+      "description": "Diesel generator solutions — sales, rentals, and maintenance."
+    },
+    {
+      "name": "BB Jewellers",
+      "url": "https://www.bbjewellers.in/",
+      "category": "Luxury Jewellery",
+      "description": "Handcrafted diamond, gold, and silver jewelry in Bangalore."
+    }
+  ]
+}
