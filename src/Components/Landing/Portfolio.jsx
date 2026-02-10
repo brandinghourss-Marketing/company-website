@@ -1,10 +1,53 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import { useContent } from "../../hooks/useContent";
 import { SkeletonText, SkeletonTitle } from "../UI/Skeleton";
 import { useFadeUp } from "../../hooks/useAnimations";
+
+const LazyIframe = ({ src, title, gradient, initial }) => {
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin: "200px" }
+    );
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      className="h-40 relative overflow-hidden"
+      style={{ background: gradient }}
+    >
+      <span className="absolute inset-0 flex items-center justify-center text-white/20 text-6xl font-bold font-display select-none">
+        {initial}
+      </span>
+      {isVisible && (
+        <iframe
+          src={src}
+          title={title}
+          className="absolute top-0 left-0 pointer-events-none border-0 z-10"
+          style={{
+            width: "1280px",
+            height: "900px",
+            transform: "scale(0.32)",
+            transformOrigin: "top left",
+          }}
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+          tabIndex={-1}
+        />
+      )}
+    </div>
+  );
+};
 
 const cardGradients = [
   "linear-gradient(135deg, #4F7CFF 0%, #00D4FF 100%)",
@@ -91,26 +134,12 @@ const Portfolio = () => {
               data-project-card
               className="group block rounded-2xl bg-white/5 border border-white/10 overflow-hidden hover:bg-white/10 hover:border-accent-electric/20 transition-all duration-500"
             >
-              {/* Live website preview */}
-              <div
-                className="h-40 relative overflow-hidden"
-                style={{ background: cardGradients[i % cardGradients.length] }}
-              >
-                <iframe
-                  src={project.url}
-                  title={project.name}
-                  className="absolute top-0 left-0 pointer-events-none border-0"
-                  style={{
-                    width: "1280px",
-                    height: "900px",
-                    transform: "scale(0.32)",
-                    transformOrigin: "top left",
-                  }}
-                  loading="lazy"
-                  sandbox="allow-scripts allow-same-origin"
-                  tabIndex={-1}
-                />
-              </div>
+              <LazyIframe
+                src={project.url}
+                title={project.name}
+                gradient={cardGradients[i % cardGradients.length]}
+                initial={project.name.charAt(0)}
+              />
 
               {/* Content */}
               <div className="p-5">

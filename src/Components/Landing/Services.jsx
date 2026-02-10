@@ -66,11 +66,11 @@ const Services = ({ variant = "homepage" }) => {
   return (
     <section
       ref={sectionRef}
-      className="py-24 md:py-32 lg:py-40 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24"
+      className="py-16 md:py-28 lg:py-40 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section heading */}
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-10 md:mb-16 lg:mb-24">
           <p data-section-label className="section-label mb-4">
             {content.subtitle}
           </p>
@@ -89,7 +89,7 @@ const Services = ({ variant = "homepage" }) => {
         </div>
 
         {/* Service cards */}
-        <div className="grid gap-24 md:gap-32">
+        <div className="grid gap-14 sm:gap-16 md:gap-24 lg:gap-32">
           {content.items.map((service, index) => (
             <ServiceCard
               key={index}
@@ -233,7 +233,7 @@ const ServiceCard = ({ index, title, description, pointers, buttonText, buttonLi
   return (
     <div
       ref={cardRef}
-      className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+      className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center"
     >
       {/* Large background number with gradient */}
       <span

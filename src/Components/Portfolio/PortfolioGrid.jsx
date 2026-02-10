@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import { useContent } from "../../hooks/useContent";
 import { SkeletonText, SkeletonTitle } from "../UI/Skeleton";
@@ -17,6 +17,51 @@ const cardGradients = [
   "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
 ];
 
+const LazyIframe = ({ src, title, gradient, initial }) => {
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin: "200px" }
+    );
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      className="h-56 relative overflow-hidden"
+      style={{ background: gradient }}
+    >
+      {/* Gradient placeholder with initial */}
+      <span className="absolute inset-0 flex items-center justify-center text-white/20 text-8xl font-bold font-display select-none">
+        {initial}
+      </span>
+      {/* Iframe only mounts when in viewport */}
+      {isVisible && (
+        <iframe
+          src={src}
+          title={title}
+          className="absolute top-0 left-0 pointer-events-none border-0 z-10"
+          style={{
+            width: "1280px",
+            height: "900px",
+            transform: "scale(0.44)",
+            transformOrigin: "top left",
+          }}
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+          tabIndex={-1}
+        />
+      )}
+    </div>
+  );
+};
+
 const PortfolioGrid = () => {
   const { content, loading } = useContent("portfolio");
   const sectionRef = useRef(null);
@@ -28,10 +73,8 @@ const PortfolioGrid = () => {
     const cards = sectionRef.current.querySelectorAll("[data-card]");
     if (!cards.length) return;
 
-    // Ensure all cards are visible first
     gsap.set(cards, { opacity: 1, y: 0 });
 
-    // Animate cards in batches as they scroll into view
     ScrollTrigger.batch(cards, {
       onEnter: (batch) => {
         gsap.from(batch, {
@@ -79,28 +122,13 @@ const PortfolioGrid = () => {
               data-card
               className="group block rounded-2xl border border-neutral-200/80 bg-white overflow-hidden shadow-sm hover:shadow-xl hover:border-accent-electric/20 transition-all duration-500"
             >
-              {/* Live website preview */}
-              <div
-                className="h-56 relative overflow-hidden"
-                style={{ background: cardGradients[i % cardGradients.length] }}
-              >
-                <iframe
-                  src={project.url}
-                  title={project.name}
-                  className="absolute top-0 left-0 pointer-events-none border-0"
-                  style={{
-                    width: "1280px",
-                    height: "900px",
-                    transform: "scale(0.44)",
-                    transformOrigin: "top left",
-                  }}
-                  loading="lazy"
-                  sandbox="allow-scripts allow-same-origin"
-                  tabIndex={-1}
-                />
-              </div>
+              <LazyIframe
+                src={project.url}
+                title={project.name}
+                gradient={cardGradients[i % cardGradients.length]}
+                initial={project.name.charAt(0)}
+              />
 
-              {/* Content */}
               <div className="p-6">
                 <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full bg-accent-electric/10 text-accent-electric mb-3">
                   {project.category}
