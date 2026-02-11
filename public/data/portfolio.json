@@ -64,6 +64,18 @@
       "url": "https://www.bbjewellers.in/",
       "category": "Luxury Jewellery",
       "description": "Handcrafted diamond, gold, and silver jewelry in Bangalore."
+    },
+    {
+      "name": "Null State",
+      "url": "https://nullstate.in/",
+      "category": "Fashion & Jewellery",
+      "description": "Handcrafted 18K gold-plated jewelry and accessories made in India. (E-Commerce) Store Made on Shopify"
+    },
+    {
+      "name": "Ezylife Tech",
+      "url": "http://ezylifetech.com/",
+      "category": "Smart Home",
+      "description": "AI-powered robotic vacuum and mopping systems for modern homes.(E-Commerce) Store Made on Shopify"
     }
   ]
 }
