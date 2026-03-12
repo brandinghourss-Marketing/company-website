@@ -40,13 +40,13 @@ const Landing = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden pt-44 md:pt-52 lg:pt-60 pb-28 md:pb-36 lg:pb-44 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24"
+      className="relative w-full pt-44 md:pt-52 lg:pt-60 pb-28 md:pb-36 lg:pb-44"
       style={{ background: "var(--gradient-hero)" }}
     >
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
-        style={{ backgroundImage: "url('/assets/common/aboutus.png')" }}
+        className="absolute inset-0 bg-cover bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: "url('/assets/common/aboutus.png')", backgroundPosition: "left top" }}
       />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(2,20,48,0.85) 0%, rgba(1,13,31,0.75) 100%)" }} />
@@ -58,7 +58,7 @@ const Landing = () => {
       <div className="absolute top-20 right-20 w-40 h-40 rounded-full border border-accent-electric/[0.06] pointer-events-none" />
       <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full border border-accent-cyan/[0.06] pointer-events-none" />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24">
         {/* Hashtag label */}
         <p data-label className="section-label mb-6 text-accent-cyan">
           {content.subtitle}

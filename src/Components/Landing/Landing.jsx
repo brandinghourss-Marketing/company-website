@@ -9,6 +9,7 @@ const Landing = () => {
   const { content, loading } = useContent("landing", "hero");
   const sectionRef = useRef(null);
   const glowRef = useRef(null);
+  const videoRef = useRef(null);
 
   useGSAP(
     () => {
@@ -43,6 +44,13 @@ const Landing = () => {
         "[data-hero-cta]",
         { scale: 0.8, opacity: 0, duration: 0.5 },
         "-=0.2",
+      );
+
+      // Video slides in from right
+      tl.from(
+        "[data-hero-video]",
+        { x: 60, opacity: 0, duration: 1, ease: "power3.out" },
+        0.4,
       );
 
       // Scroll indicator
@@ -84,13 +92,16 @@ const Landing = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 pb-24 md:pt-24"
-      style={{ background: "var(--gradient-hero)" }}
+      className="relative min-h-screen flex flex-col lg:flex-row items-center lg:gap-12 overflow-hidden pt-28 pb-28 md:pt-24 md:pb-24 px-6 sm:px-8 lg:px-16"
+      style={{
+        background:
+          "linear-gradient(to right, #021430 0%, #0A2A5E 30%, #0d2551 65%)",
+      }}
     >
-      {/* Radial glow behind heading */}
+      {/* Radial glow — positioned behind the video side */}
       <div
         ref={glowRef}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+        className="absolute top-1/2 right-0 translate-x-1/4 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
           background:
             "radial-gradient(circle, rgba(79,124,255,0.15) 0%, transparent 70%)",
@@ -103,22 +114,22 @@ const Landing = () => {
       <div className="absolute bottom-32 left-10 w-96 h-96 rounded-full border border-accent-electric/5 pointer-events-none" />
       <div className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full border border-accent-cyan/5 pointer-events-none" />
 
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-6 sm:px-8">
+      {/* Left column — Text content */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center text-center lg:text-left">
         {/* Label */}
-        <p data-hero-label className="section-label mb-6">
+        <p data-hero-label className="section-label mb-4">
           {content.subtitle}
         </p>
 
         {/* Main heading - word by word reveal */}
         <h1
           data-hero-heading
-          className="text-display-hero text-white mb-8 leading-[1.1]"
+          className="text-display-hero lg:![font-size:clamp(2.2rem,4.5vw,4.5rem)] text-white mb-5 leading-[1.05]"
         >
           {titleWords.map((word, i) => (
             <span
               key={i}
-              className="inline-block overflow-hidden mr-[0.3em] pb-1"
+              className="inline-block overflow-hidden mr-[0.25em] pb-1"
             >
               <span className="hero-word inline-block">{word}</span>
             </span>
@@ -128,19 +139,51 @@ const Landing = () => {
         {/* Subtitle */}
         <p
           data-hero-subtitle
-          className="text-xl md:text-2xl text-white/60 mb-10 max-w-2xl mx-auto"
+          className="text-lg text-white/60 mb-8 max-w-sm mx-auto lg:mx-0"
         >
           Your Brand Speaks Success
         </p>
 
         {/* CTA */}
-        <Link
-          href={content.buttonLink}
-          data-hero-cta
-          className="btn-gradient-filled text-lg"
+        <div data-hero-cta>
+          <Link
+            href={content.buttonLink}
+            className="btn-gradient-filled text-base"
+          >
+            {content.buttonText}
+          </Link>
+        </div>
+      </div>
+
+      {/* Right column — Video, bleeds to viewport edge on desktop */}
+      <div className="relative z-10 w-full lg:w-[42%] lg:flex-none flex items-center justify-center mt-10 lg:mt-0">
+        <div
+          ref={videoRef}
+          data-hero-video
+          className="relative w-full"
         >
-          {content.buttonText}
-        </Link>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full lg:h-[70vh] object-cover rounded-2xl lg:rounded-3xl"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0%, black 22%), " +
+                "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+              WebkitMaskComposite: "destination-in",
+              maskImage:
+                "linear-gradient(to right, transparent 0%, black 22%), " +
+                "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+              maskComposite: "intersect",
+              boxShadow:
+                "0 0 0 1px rgba(79,124,255,0.12), 0 24px 80px rgba(2,20,48,0.5), 0 0 60px rgba(79,124,255,0.1)",
+            }}
+          >
+            <source src="/HeroBannerVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       {/* Scroll indicator */}

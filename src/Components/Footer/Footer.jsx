@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Column 1: Brand + Nav */}
           <div className="flex flex-col gap-8">
             <Link href="/" className="w-fit">
-              <img src="/assets/common/logo2.png" alt="Branding Hours" className="h-14 object-contain" />
+              <img src="/assets/common/logo6.png" alt="Branding Hours" className="h-14 object-contain" />
             </Link>
 
             <p className="text-sm text-white/40 leading-relaxed max-w-xs">

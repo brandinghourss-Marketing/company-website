@@ -25,8 +25,8 @@ export const metadata = {
   title: "Branding Hours",
   description: "Where Clicks Turn Into Clients and Your Brand Speaks Success",
   icons: {
-    icon: "/assets/common/logo2.png",
-    apple: "/assets/common/logo2.png",
+    icon: "/assets/common/logo6.png",
+    apple: "/assets/common/logo6.png",
   },
 };
 

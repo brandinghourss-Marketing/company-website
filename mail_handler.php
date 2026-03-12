@@ -9,7 +9,7 @@ $recipient_email = "contact@brandinghours.com";
 $sender_email_domain = "webmaster@brandinghours.com"; 
 
 // 3. The URL of the page the user will see after a successful submission 
-$thank_you_url = "/thank-you.html"; 
+$thank_you_url = "/thank-you/";
 // ----------------------------------------------------
 
 
