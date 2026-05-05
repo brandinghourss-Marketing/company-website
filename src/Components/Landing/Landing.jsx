@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { useContent } from "../../hooks/useContent";
@@ -10,6 +10,14 @@ const Landing = () => {
   const sectionRef = useRef(null);
   const glowRef = useRef(null);
   const videoRef = useRef(null);
+
+  // Fix mobile autoplay: React doesn't always apply `muted` as a DOM attribute
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
 
   useGSAP(
     () => {
@@ -167,6 +175,7 @@ const Landing = () => {
             muted
             loop
             playsInline
+            preload="metadata"
             className="w-full lg:h-[70vh] object-cover rounded-2xl lg:rounded-3xl"
             style={{
               WebkitMaskImage:
