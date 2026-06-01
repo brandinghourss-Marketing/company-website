@@ -20,82 +20,798 @@
     "buttonLink": "/contact",
     "items": [
       {
-        "title": "Search Engine Optimization (SEO)",
-        "description": "Boost your visibility, attract organic traffic, and rank higher on search engines with smart SEO strategies.",
+        "slug": "seo",
+        "title": "SEO, AEO & GEO",
+        "description": "Modern search extends beyond Google. We help your brand rank on traditional search engines (SEO), get cited by AI answer engines like ChatGPT and Perplexity (AEO), and appear in generative AI responses (GEO) — so you're visible wherever your audience searches.",
         "pointers": [
-          "Keyword Optimization",
-          "On-Page SEO",
+          "Search Engine Optimization (SEO)",
+          "Answer Engine Optimization (AEO)",
+          "Generative Engine Optimization (GEO)",
           "Technical SEO",
-          "Backlink Building",
-          "Competitor Analysis",
-          "Content Strategy"
+          "On-Page SEO",
+          "Off-Page SEO & Link Building",
+          "Local SEO",
+          "Content Optimization",
+          "SEO Reporting & Analytics"
         ],
-        "image": "/assets/services/seo.png"
+        "image": "/assets/services/seo.png",
+        "directAnswer": "SEO (Search Engine Optimization) is the process of improving your website's ranking on Google and other search engines to attract qualified organic visitors without paying for ads. AEO (Answer Engine Optimization) optimizes your content so AI tools like ChatGPT and Perplexity cite your brand when users ask questions. GEO (Generative Engine Optimization) structures your online presence so generative AI platforms naturally recommend your business in their responses — giving you visibility across every form of modern search.",
+        "industries": [
+          {
+            "name": "E-commerce",
+            "useCase": "Rank product pages and outrank competitors on Google and AI shopping assistants"
+          },
+          {
+            "name": "Healthcare",
+            "useCase": "Appear at the top when patients search for symptoms, treatments, and clinics"
+          },
+          {
+            "name": "Real Estate",
+            "useCase": "Capture high-intent buyers and renters searching for properties in your area"
+          },
+          {
+            "name": "SaaS & Technology",
+            "useCase": "Rank for problem-based and feature-based keywords that drive trial signups"
+          },
+          {
+            "name": "Education & Ed-Tech",
+            "useCase": "Get discovered by students searching for courses, colleges, and tutors"
+          },
+          {
+            "name": "Legal & Professional Services",
+            "useCase": "Build authority and appear for high-value local and national search queries"
+          },
+          {
+            "name": "Finance & Fintech",
+            "useCase": "Rank for loan, investment, and financial planning queries with trusted content"
+          },
+          {
+            "name": "Hospitality & Travel",
+            "useCase": "Attract travellers searching for hotels, tours, and experiences in your location"
+          }
+        ],
+        "relatedServices": ["paid-media", "web-dev", "social-media-marketing"],
+        "process": [
+          {
+            "step": "01",
+            "title": "Research & Audit",
+            "description": "We deep-dive into your website, competitors, and niche — auditing technical health, content quality, and AI citation gaps to find every opportunity."
+          },
+          {
+            "step": "02",
+            "title": "Strategy & Planning",
+            "description": "We map high-intent keywords, identify answer-based content opportunities, and build an entity-rich content strategy aligned with AI search behaviour."
+          },
+          {
+            "step": "03",
+            "title": "On-Page & Technical Optimisation",
+            "description": "Content, metadata, schema markup, internal links, and core technical SEO are aligned so search engines and AI platforms love your site."
+          },
+          {
+            "step": "04",
+            "title": "Monitor & Refine",
+            "description": "We track rankings, organic traffic, AI citations, and conversions monthly — continuously tuning strategy to stay ahead of algorithm and AI updates."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the difference between SEO, AEO, and GEO?",
+            "answer": "SEO (Search Engine Optimization) helps your website rank higher on Google and Bing. AEO (Answer Engine Optimization) optimizes your content to be cited by AI-powered answer engines like ChatGPT, Perplexity, and Google's AI Overviews. GEO (Generative Engine Optimization) structures your content so generative AI platforms reference your brand in their responses. Together, they give your brand maximum search visibility in 2025 and beyond."
+          },
+          {
+            "question": "How long does SEO take to show results?",
+            "answer": "SEO typically shows measurable improvements within 3–6 months, with significant results in 6–12 months for competitive industries. Technical fixes and local SEO often show faster results. AEO and GEO improvements can appear sooner as AI platforms constantly re-crawl and update their knowledge. We provide monthly reports so you always know where you stand."
+          },
+          {
+            "question": "Can SEO help generate leads for my business?",
+            "answer": "Absolutely. We focus on commercial and transactional keywords that attract visitors with buying intent — not just traffic. Our on-page optimisation, landing page strategy, and conversion-focused content are designed to turn organic visitors into qualified leads and customers."
+          },
+          {
+            "question": "What industries does Branding Hours specialize in for SEO?",
+            "answer": "We've delivered SEO results across a wide range of industries including e-commerce, real estate, healthcare, SaaS, education, hospitality, and professional services. Our team adapts strategy to your niche, competition level, and growth goals."
+          },
+          {
+            "question": "Do you provide monthly SEO reports?",
+            "answer": "Yes. Every client receives detailed monthly SEO reports covering keyword rankings, organic traffic trends, backlink growth, technical health, and conversion data. We also include actionable insights and the next month's priorities so you always know what we're working on and why."
+          }
+        ]
       },
       {
-        "title": "Social Media Optimization (SMO)",
-        "description": "Turn social engagement into business growth with a strong, consistent, and optimized social presence.",
+        "slug": "social-media-marketing",
+        "title": "Social Media Marketing",
+        "description": "Grow your brand across every platform with strategic, consistent, and high-converting social media marketing — from content creation and community management to targeted advertising.",
         "pointers": [
-          "Profile & Page Optimization",
-          "Content Calendar & Strategy",
-          "Visual Branding",
+          "Social Media Management",
+          "Social Media Optimization (SMO)",
+          "Social Media Advertising",
+          "Content Strategy & Calendar",
+          "Reels & Short Form Video Content",
           "Community Management",
-          "Performance Tracking",
-          "Hashtag & Trend Optimization"
+          "Social Media Analytics & Reporting"
         ],
-        "image": "/assets/services/smo.png"
+        "image": "/assets/services/smo.png",
+        "directAnswer": "Social Media Marketing is the strategic use of platforms like Instagram, Facebook, LinkedIn, and YouTube to build brand awareness, grow an engaged audience, and drive measurable business results. It combines organic content — posts, Reels, Stories, and carousels — with paid social advertising to reach both existing followers and cold audiences. A well-executed social media strategy turns passive scrollers into loyal customers and brand advocates.",
+        "industries": [
+          {
+            "name": "Fashion & Lifestyle",
+            "useCase": "Build aspirational brand identity through Reels, collabs, and visual storytelling"
+          },
+          {
+            "name": "Food & Beverage",
+            "useCase": "Drive footfall and orders with appetite-stimulating content and local targeting"
+          },
+          {
+            "name": "Beauty & Personal Care",
+            "useCase": "Grow a loyal community through tutorials, UGC, and influencer partnerships"
+          },
+          {
+            "name": "Fitness & Wellness",
+            "useCase": "Establish authority and acquire members with transformation content and ads"
+          },
+          {
+            "name": "D2C Brands",
+            "useCase": "Scale awareness and repeat purchases through consistent brand storytelling"
+          },
+          {
+            "name": "Real Estate",
+            "useCase": "Showcase properties and generate enquiries with targeted social campaigns"
+          },
+          {
+            "name": "Education",
+            "useCase": "Drive course enquiries and enrolments through awareness and retargeting"
+          },
+          {
+            "name": "Restaurants & Hospitality",
+            "useCase": "Fill tables and boost bookings with local social media presence"
+          }
+        ],
+        "relatedServices": ["seo", "paid-media", "influencer-marketing"],
+        "process": [
+          {
+            "step": "01",
+            "title": "Audit & Strategy",
+            "description": "We evaluate your current social presence, analyse competitors, and build a platform-specific strategy with clear growth targets and content themes."
+          },
+          {
+            "step": "02",
+            "title": "Content Creation",
+            "description": "Our team creates on-brand posts, Reels, carousels, and short-form videos with a planned content calendar optimised for reach and engagement."
+          },
+          {
+            "step": "03",
+            "title": "Community Management",
+            "description": "We actively manage comments, DMs, and brand mentions to build a loyal, engaged community and protect your brand reputation."
+          },
+          {
+            "step": "04",
+            "title": "Analytics & Growth",
+            "description": "Monthly reports cover reach, engagement, follower growth, and ad performance — with continuous strategy refinement based on real data."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What social media platforms do you manage?",
+            "answer": "We manage all major platforms including Instagram, Facebook, LinkedIn, Twitter/X, YouTube, and Pinterest. We tailor the platform mix to where your target audience actually spends time — so you get results, not just presence."
+          },
+          {
+            "question": "How often will you post on my social media accounts?",
+            "answer": "Posting frequency is based on your plan and platform best practices. Typically, we post 4–7 times per week on Instagram, 3–5 times on LinkedIn, and daily Stories/Reels where relevant. We build a monthly content calendar and share it for approval before publishing."
+          },
+          {
+            "question": "Can you create Reels and short-form video content?",
+            "answer": "Yes. Short-form video is central to our social media strategy. We conceptualise, script, produce, edit, and publish Reels, YouTube Shorts, and other short-form videos — optimised for each platform's algorithm and your brand's visual language."
+          },
+          {
+            "question": "How do you measure the success of social media campaigns?",
+            "answer": "We track reach, impressions, engagement rate, follower growth, website clicks, lead form submissions, and ad performance metrics like CTR and CPL. Monthly reports include benchmark comparisons and forward-looking recommendations."
+          },
+          {
+            "question": "Do you handle social media advertising in addition to organic content?",
+            "answer": "Yes. Our social media service covers both organic content and paid social advertising. We run Meta Ads (Instagram + Facebook), LinkedIn Ads, and other platform campaigns — often combining both for maximum brand growth and lead generation."
+          }
+        ]
       },
       {
-        "title": "Paid Media Marketing | Lead Generation",
-        "description": "Reach your audience faster and generate quality leads with targeted paid campaigns across platforms.",
+        "slug": "paid-media",
+        "title": "Paid Media Marketing",
+        "description": "Reach the right audience at the right moment with performance-driven paid campaigns across Google, Meta, YouTube, and beyond — built to maximize ROI, generate quality leads, and scale your business.",
         "pointers": [
-          "PPC Campaigns",
-          "Social Media Ads",
-          "Display & Retargeting Ads",
-          "Audience Targeting & Segmentation",
-          "Lead Capture & Nurturing",
-          "Performance Tracking & Optimization"
+          "Google Ads",
+          "Meta Ads (Instagram & Facebook)",
+          "Performance Max Campaigns",
+          "Demand Generation Campaigns",
+          "YouTube Advertising",
+          "Remarketing Campaigns",
+          "Lead Generation Campaigns",
+          "Conversion Tracking & Setup",
+          "Campaign Optimization & Reporting"
         ],
-        "image": "/assets/services/paid-media.png"
+        "image": "/assets/services/paid-media.png",
+        "directAnswer": "Paid Media Marketing is the practice of paying to place targeted ads in front of potential customers across Google, Meta (Facebook and Instagram), YouTube, and other platforms. Unlike organic marketing which takes months to build, paid media delivers immediate visibility and measurable leads — making it one of the fastest ways to generate revenue. It includes search ads, display advertising, social media ads, video campaigns, Performance Max, and remarketing.",
+        "industries": [
+          {
+            "name": "E-commerce & Retail",
+            "useCase": "Drive product sales and reduce cart abandonment with Google Shopping and Meta retargeting"
+          },
+          {
+            "name": "Real Estate",
+            "useCase": "Generate qualified buyer and investor leads at a measurable cost per lead"
+          },
+          {
+            "name": "Education & Ed-Tech",
+            "useCase": "Fill course seats and drive demo bookings with precision audience targeting"
+          },
+          {
+            "name": "Healthcare & Clinics",
+            "useCase": "Drive appointment bookings and patient enquiries with compliant ad campaigns"
+          },
+          {
+            "name": "Finance & Lending",
+            "useCase": "Generate high-intent loan and investment leads with keyword and audience targeting"
+          },
+          {
+            "name": "SaaS & Software",
+            "useCase": "Drive trial signups and demo requests at an optimized cost per acquisition"
+          },
+          {
+            "name": "Automotive",
+            "useCase": "Generate test drive bookings and dealership visits with geo-targeted campaigns"
+          },
+          {
+            "name": "Home Services",
+            "useCase": "Capture local service demand with search ads that convert searchers into calls"
+          }
+        ],
+        "relatedServices": [
+          "seo",
+          "social-media-marketing",
+          "hotstar-marketing"
+        ],
+        "process": [
+          {
+            "step": "01",
+            "title": "Research & Planning",
+            "description": "We define target audiences, study competitor ad strategies, and select the platforms and campaign types with the highest ROI potential for your business."
+          },
+          {
+            "step": "02",
+            "title": "Campaign Setup",
+            "description": "We craft conversion-focused ad creatives, write compelling copy, set up precise targeting, configure conversion tracking, and structure bids for efficiency."
+          },
+          {
+            "step": "03",
+            "title": "Launch & Optimise",
+            "description": "Campaigns go live with daily monitoring. We test variables, pause underperformers fast, and shift budget to winning ad sets to protect every rupee."
+          },
+          {
+            "step": "04",
+            "title": "Scale & Report",
+            "description": "Winning campaigns are scaled strategically while we deliver transparent monthly reports covering leads, CPL, ROAS, and revenue attribution."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What budget should I start with for paid media campaigns?",
+            "answer": "We recommend a minimum monthly ad spend of ₹30,000–₹50,000 to gather meaningful data and optimise effectively. However, we work with budgets of all sizes and always recommend the right starting point based on your industry, goals, and competition level. Our management fee is separate from the ad spend."
+          },
+          {
+            "question": "How quickly can paid media campaigns go live?",
+            "answer": "After onboarding and strategy sign-off, campaigns are typically live within 7–10 business days. This includes account setup, ad creative production, audience configuration, conversion tracking, and quality checks. For urgent campaigns, we can fast-track in as little as 5 days."
+          },
+          {
+            "question": "What is a Performance Max campaign?",
+            "answer": "Performance Max (PMax) is Google's AI-powered campaign type that runs across all Google channels — Search, Display, YouTube, Gmail, Maps, and Discover — from a single campaign. It uses machine learning to find the highest-converting placements automatically. We use PMax strategically alongside standard Search and Display campaigns for maximum reach and efficiency."
+          },
+          {
+            "question": "How do you measure ROAS (Return on Ad Spend)?",
+            "answer": "ROAS = Revenue generated ÷ Ad spend. For example, a ROAS of 4x means every ₹1 spent on ads returns ₹4 in revenue. We set up conversion tracking via Google Tag Manager, Meta Pixel, and CRM integrations to accurately attribute revenue to campaigns — giving you clear visibility of what's working."
+          },
+          {
+            "question": "Do you manage Meta Ads and Google Ads together?",
+            "answer": "Yes. Many of our clients run both Google and Meta campaigns simultaneously, which we manage as a unified paid media strategy. Google captures high-intent search traffic while Meta builds awareness and retargets warm audiences — together they create a full-funnel paid media engine."
+          }
+        ]
       },
       {
-        "title": "Website Development | UI & UX",
-        "description": "Build fast, intuitive, and visually stunning websites that drive engagement and conversions.",
+        "slug": "web-dev",
+        "title": "Website Development",
+        "description": "Build fast, scalable, and conversion-optimised digital experiences — from custom websites and Shopify stores to landing pages and dedicated development resources that accelerate your product roadmap.",
         "pointers": [
-          "Custom Website Design",
-          "Responsive Development",
-          "User Experience (UX) Design",
-          "User Interface (UI) Design",
-          "E-commerce / Web App Integration",
-          "Website Maintenance & Optimization"
+          "Custom Website Development",
+          "Shopify Development",
+          "Landing Page Development",
+          "Ecommerce Development",
+          "Website Maintenance",
+          "Website Performance Optimization",
+          "CMS Development",
+          "Staff Augmentation (Dedicated Developers)"
         ],
-        "image": "/assets/services/web-dev.png"
+        "image": "/assets/services/web-dev.png",
+        "directAnswer": "Website Development is the process of designing, building, and maintaining websites and web applications that look great, load fast, and convert visitors into customers. Modern website development covers front-end UI design, back-end functionality, e-commerce integrations, CMS setup, and performance optimization. A high-performance website is the most important digital asset your business can own — it works for you 24/7 as your best salesperson.",
+        "industries": [
+          {
+            "name": "Startups & Scale-ups",
+            "useCase": "Launch product websites and MVPs fast with clean, scalable code"
+          },
+          {
+            "name": "E-commerce & Retail",
+            "useCase": "Build high-converting Shopify stores and custom e-commerce experiences"
+          },
+          {
+            "name": "Healthcare & Clinics",
+            "useCase": "Create trustworthy, accessible websites with appointment booking integrations"
+          },
+          {
+            "name": "Education & Ed-Tech",
+            "useCase": "Build course portals, LMS integrations, and student acquisition pages"
+          },
+          {
+            "name": "Finance & Professional Services",
+            "useCase": "Build credibility with secure, fast, and compliance-ready websites"
+          },
+          {
+            "name": "SaaS & Technology",
+            "useCase": "Create marketing sites and web apps with Next.js and custom API integrations"
+          },
+          {
+            "name": "Real Estate",
+            "useCase": "Develop property listing platforms with search filters and lead capture"
+          },
+          {
+            "name": "Restaurants & Hospitality",
+            "useCase": "Build reservation systems, menus, and booking-optimized websites"
+          }
+        ],
+        "relatedServices": ["seo", "branding", "paid-media"],
+        "staffAugmentation": {
+          "headline": "Dedicated Full-Stack Developers",
+          "description": "Extend your team with experienced developers on a dedicated resource model — fully integrated with your workflows, timezone, and goals.",
+          "skills": [
+            "React.js",
+            "Next.js",
+            "Node.js",
+            "Shopify",
+            "TypeScript",
+            "API Integrations"
+          ],
+          "experience": "5+ Years Experience",
+          "model": "Dedicated Resource Model"
+        },
+        "process": [
+          {
+            "step": "01",
+            "title": "Discovery & Scoping",
+            "description": "We learn your goals, audience, and tech requirements to define the right architecture, stack, and timeline — with no surprises at launch."
+          },
+          {
+            "step": "02",
+            "title": "Design & Prototype",
+            "description": "Wireframes and high-fidelity UI/UX designs are crafted and iterated on until every screen is intuitive, on-brand, and conversion-ready."
+          },
+          {
+            "step": "03",
+            "title": "Development & QA",
+            "description": "Clean, performant code brings the design to life — optimised for speed, accessibility, Core Web Vitals, and SEO from day one. Full QA across devices before launch."
+          },
+          {
+            "step": "04",
+            "title": "Launch & Support",
+            "description": "We handle deployment, DNS, and post-launch monitoring. Ongoing maintenance, performance optimization, and feature updates available as needed."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How long does website development typically take?",
+            "answer": "A standard business website takes 3–6 weeks from kickoff to launch. E-commerce stores and custom web applications typically take 6–12 weeks depending on complexity. Landing pages can be delivered in as little as 1–2 weeks. We provide a clear timeline during scoping so you always know what to expect."
+          },
+          {
+            "question": "Do you build Shopify websites and ecommerce stores?",
+            "answer": "Yes. Shopify development is one of our core specialisms. We build custom Shopify themes, migrate existing stores, develop custom apps, and optimise stores for conversion rate and performance. We also build ecommerce solutions on WooCommerce, custom Next.js frontends, and headless commerce architectures."
+          },
+          {
+            "question": "Can you redesign or improve an existing website?",
+            "answer": "Absolutely. Website redesigns are a common engagement. We start with a UX and performance audit of your current site, identify friction points, and rebuild or revamp pages for better conversions, speed, and visual appeal — while preserving your SEO equity."
+          },
+          {
+            "question": "Do you provide ongoing website maintenance?",
+            "answer": "Yes. We offer monthly maintenance plans that cover security updates, performance monitoring, content updates, plugin/dependency upgrades, uptime monitoring, and bug fixes. This ensures your site stays fast, secure, and up-to-date without you worrying about it."
+          },
+          {
+            "question": "Do you offer dedicated developers for long-term projects?",
+            "answer": "Yes. Our Staff Augmentation model provides experienced Full-Stack Developers (5+ years) skilled in React.js, Next.js, Node.js, Shopify, TypeScript, and API integrations. They work on a dedicated resource model — fully embedded in your team's workflows, standups, and sprint cycles."
+          }
+        ]
       },
       {
-        "title": "Branding",
-        "description": "Create a strong, memorable brand identity that resonates with your audience and builds trust.",
+        "slug": "branding",
+        "title": "Branding, Design & Brand Strategy",
+        "description": "Build a brand that speaks before you do — from foundational strategy to visual identity, we craft brands that command attention, build lasting trust, and grow with your business.",
         "pointers": [
           "Brand Strategy",
-          "Logo Design & Visual Identity",
+          "Visual Identity Design",
+          "Logo Design",
+          "Brand Positioning",
           "Brand Guidelines",
-          "Messaging & Tone of Voice",
-          "Rebranding",
-          "Brand Collateral Design"
+          "Creative Design",
+          "Brand Storytelling",
+          "Packaging Design"
         ],
-        "image": "/assets/services/branding.png"
+        "image": "/assets/services/branding.png",
+        "directAnswer": "Branding is the strategic process of defining and expressing what your business stands for — through your visual identity, messaging, values, and personality — in a way that resonates with your audience and differentiates you from competitors. Brand strategy determines how you position your brand and who you speak to, while visual identity design (logo, colours, typography) gives it a recognizable face. Together, they transform a business into a brand that people trust, remember, and choose.",
+        "industries": [
+          {
+            "name": "Startups & New Ventures",
+            "useCase": "Build a compelling brand identity from scratch that attracts investors and early customers"
+          },
+          {
+            "name": "Consumer Goods & FMCG",
+            "useCase": "Create packaging and brand identity that stands out on shelf and online"
+          },
+          {
+            "name": "Fashion & Lifestyle",
+            "useCase": "Define a visual language and brand world that resonates with your target audience"
+          },
+          {
+            "name": "Hospitality & F&B",
+            "useCase": "Build a memorable brand experience across every customer touchpoint"
+          },
+          {
+            "name": "Healthcare & Wellness",
+            "useCase": "Create a trustworthy, compassionate brand identity that builds patient confidence"
+          },
+          {
+            "name": "Professional Services",
+            "useCase": "Establish authority and differentiation in competitive service markets"
+          },
+          {
+            "name": "Real Estate",
+            "useCase": "Build a premium brand identity that commands buyer and investor trust"
+          },
+          {
+            "name": "NGOs & Social Impact",
+            "useCase": "Create purpose-driven brand identities that inspire action and donations"
+          }
+        ],
+        "relatedServices": ["web-dev", "photography", "social-media-marketing"],
+        "process": [
+          {
+            "step": "01",
+            "title": "Brand Discovery",
+            "description": "We run a deep-dive strategy session to uncover your brand's purpose, positioning, audience, and competitive landscape — the foundation everything is built on."
+          },
+          {
+            "step": "02",
+            "title": "Visual Identity",
+            "description": "Logo, colour palette, typography, and visual language are designed to express your brand's character distinctly and memorably across every touchpoint."
+          },
+          {
+            "step": "03",
+            "title": "Brand Guidelines",
+            "description": "We package everything into a comprehensive brand guide so your team, partners, and agencies maintain perfect consistency at every brand interaction."
+          },
+          {
+            "step": "04",
+            "title": "Launch & Rollout",
+            "description": "We roll out the new identity across all collateral, profiles, packaging, and digital presence — making the launch or rebrand seamless and impactful."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is included in a brand strategy?",
+            "answer": "Brand strategy covers your brand's positioning (what you stand for and who you serve), messaging and tone of voice, value proposition, competitive differentiation, and audience personas. A strong brand strategy is the blueprint that ensures every piece of design, copy, and communication works together to build a consistent and trusted brand."
+          },
+          {
+            "question": "How long does the branding process take?",
+            "answer": "A full brand identity project (strategy + visual identity + brand guidelines) typically takes 4–8 weeks. Logo-only projects can be delivered in 2–3 weeks. Timeline depends on the scope, number of revision rounds, and how quickly feedback is provided. We work to clear milestones so you always know where we are."
+          },
+          {
+            "question": "Do you work with both startups and established businesses?",
+            "answer": "Yes. We work with early-stage startups building their brand from scratch, growth-stage companies refining their identity, and established businesses undergoing a rebrand. Our process adapts to where you are — whether you need a complete brand build or a strategic evolution of what already exists."
+          },
+          {
+            "question": "What file formats will I receive for my logo and brand assets?",
+            "answer": "You'll receive your logo and brand assets in all standard formats — SVG, PNG, PDF, EPS, and AI. We provide files optimised for web, print, social media, and large-format use. You own all source files and final deliverables outright."
+          },
+          {
+            "question": "Do you offer packaging design?",
+            "answer": "Yes. Packaging design is part of our branding service. We design product packaging that reflects your brand identity, stands out on shelf and in unboxing experiences, and meets production print specifications. We work closely with your manufacturer or printer to ensure what we design can be produced exactly as intended."
+          }
+        ]
       },
       {
+        "slug": "photography",
         "title": "Photography | Product Shoot",
-        "description": "Showcase your products and brand story with high-quality, professional photography.",
+        "description": "Showcase your products and brand story with high-quality, professionally shot and edited photography — built for e-commerce, social media, and print.",
         "pointers": [
           "Product Photography",
           "Brand Photography",
           "Editing & Retouching",
           "Lifestyle / Context Shots",
           "Event / Campaign Photography",
-          "Content Optimization"
+          "Content Optimization for Platforms"
         ],
-        "image": "/assets/services/photography.png"
+        "image": "/assets/services/photography.png",
+        "directAnswer": "Product and brand photography is the professional capture and editing of images that showcase your products, services, and brand story at their best. High-quality photography directly influences purchase decisions — over 75% of online shoppers rely on product images when deciding to buy. Whether for e-commerce listings, social media content, advertising campaigns, or your website, professional photography elevates your brand's perceived quality and drives more conversions.",
+        "industries": [
+          {
+            "name": "E-commerce & D2C",
+            "useCase": "Create Amazon and Shopify-ready product images that drive clicks and conversions"
+          },
+          {
+            "name": "Fashion & Apparel",
+            "useCase": "Showcase clothing and accessories with editorial and lookbook-style shoots"
+          },
+          {
+            "name": "Food & Beverage",
+            "useCase": "Make food look irresistible with appetite-stimulating photography for menus and social"
+          },
+          {
+            "name": "Jewelry & Accessories",
+            "useCase": "Capture detail and craftsmanship with precision macro and lifestyle photography"
+          },
+          {
+            "name": "Beauty & Personal Care",
+            "useCase": "Create aspirational product imagery for packaging, ads, and e-commerce"
+          },
+          {
+            "name": "Home Decor & Furniture",
+            "useCase": "Showcase products in lifestyle settings that inspire purchase decisions"
+          },
+          {
+            "name": "Hospitality & Restaurants",
+            "useCase": "Create atmosphere photography that drives bookings and social engagement"
+          },
+          {
+            "name": "Healthcare & Wellness",
+            "useCase": "Build trust through professional team, clinic, and product photography"
+          }
+        ],
+        "relatedServices": ["branding", "social-media-marketing", "web-dev"],
+        "process": [
+          {
+            "step": "01",
+            "title": "Concept & Planning",
+            "description": "We align on the visual direction, mood board, props, and locations before a single shot is taken — ensuring shoot day is efficient and every frame has purpose."
+          },
+          {
+            "step": "02",
+            "title": "Shoot Day",
+            "description": "Our team captures every angle with professional lighting and equipment, getting the hero shots and lifestyle context that tell your brand story authentically."
+          },
+          {
+            "step": "03",
+            "title": "Editing & Retouching",
+            "description": "Images are colour-graded, retouched, and polished to meet brand standards and platform specifications — Amazon, Shopify, Instagram, print, and more."
+          },
+          {
+            "step": "04",
+            "title": "Delivery",
+            "description": "Final assets are delivered in all required formats and sizes, ready to publish across web, social, and print — with full usage rights."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What types of photography do you offer?",
+            "answer": "We offer product photography (white background and lifestyle), brand photography for websites and campaigns, event and launch photography, and content shoots optimised for social media platforms. Each shoot is planned around your specific brand requirements and platform needs."
+          },
+          {
+            "question": "Do you handle post-processing and editing?",
+            "answer": "Yes. Every image goes through professional post-processing including colour correction, background editing, retouching, and format-specific optimisation. We deliver files ready for immediate use across web, social media, e-commerce listings, and print without any additional editing required from your side."
+          },
+          {
+            "question": "How long does a product shoot take?",
+            "answer": "A typical product photography session takes half a day to a full day depending on the number of products and shot types required. Brand campaigns and lifestyle shoots are scoped individually. We provide a detailed shoot plan before the day so there are no surprises on set."
+          },
+          {
+            "question": "Can you do photography for e-commerce platforms like Amazon or Shopify?",
+            "answer": "Yes. E-commerce platform photography is one of our most requested services. We shoot and edit images to meet Amazon's white background specifications, Shopify product listing requirements, and lifestyle imagery guidelines for featured placements."
+          },
+          {
+            "question": "Do you shoot on-location or in a studio?",
+            "answer": "Both. We have access to a professional studio setup for product and brand photography, and we also shoot on-location for lifestyle, event, and campaign content. The right setting is chosen based on your brief and the visual story we're telling."
+          }
+        ]
+      },
+      {
+        "slug": "hotstar-marketing",
+        "title": "Hotstar Marketing & OTT Advertising",
+        "description": "Reach millions of engaged viewers on Disney+ Hotstar with targeted OTT advertising campaigns — precise audience targeting, compelling video creatives, and full performance reporting for brand awareness and measurable results.",
+        "pointers": [
+          "Hotstar Ads",
+          "OTT Advertising Strategy",
+          "Audience Targeting",
+          "Video Ad Campaigns",
+          "Regional Audience Campaigns",
+          "Brand Awareness Campaigns",
+          "Performance Reporting"
+        ],
+        "image": "/assets/services/hotstar-marketing.png",
+        "directAnswer": "Hotstar Marketing refers to advertising on Disney+ Hotstar — India's largest streaming platform with 500+ million users — by placing video ads before or during premium content like IPL cricket, web series, and Hollywood movies. OTT (Over-The-Top) advertising reaches engaged, captive viewers in a full-screen environment, offering precise audience targeting by demographics, location, and content preference that traditional TV advertising cannot match. It is one of the most powerful brand-building channels available in India today.",
+        "industries": [
+          {
+            "name": "FMCG & Consumer Goods",
+            "useCase": "Build nationwide brand awareness during high-viewership sporting events"
+          },
+          {
+            "name": "Automotive",
+            "useCase": "Reach aspirational audiences watching premium content with brand campaigns"
+          },
+          {
+            "name": "Real Estate & Home Loans",
+            "useCase": "Target affluent urban audiences with property and loan campaigns"
+          },
+          {
+            "name": "BFSI & Insurance",
+            "useCase": "Run trust-building brand campaigns to high-income demographic segments"
+          },
+          {
+            "name": "Telecom",
+            "useCase": "Reach mass audiences with regional language targeting and plan promotions"
+          },
+          {
+            "name": "Ed-Tech & Online Learning",
+            "useCase": "Target students and parents during sports and prime-time OTT content"
+          },
+          {
+            "name": "Travel & Hospitality",
+            "useCase": "Inspire travel decisions with immersive video ads in premium content breaks"
+          },
+          {
+            "name": "Entertainment & Media",
+            "useCase": "Promote films, shows, and events to highly engaged OTT audiences"
+          }
+        ],
+        "relatedServices": [
+          "paid-media",
+          "influencer-marketing",
+          "social-media-marketing"
+        ],
+        "process": [
+          {
+            "step": "01",
+            "title": "Audience & Strategy",
+            "description": "We identify the right audience segments on Hotstar based on demographics, interests, content preferences, and regional targeting — aligning campaign goals with viewership behaviour."
+          },
+          {
+            "step": "02",
+            "title": "Creative Production",
+            "description": "We produce compelling video ad creatives optimised for the OTT environment — designed to capture attention in full-screen, high-quality viewing contexts before or during premium content."
+          },
+          {
+            "step": "03",
+            "title": "Campaign Launch",
+            "description": "Campaigns are launched with precise targeting parameters, frequency capping, and budget allocation — ensuring your ad reaches the right viewers at the right moments."
+          },
+          {
+            "step": "04",
+            "title": "Reporting & Optimisation",
+            "description": "We track impressions, view-through rates, reach, frequency, and brand lift — delivering transparent performance reports and continuously optimising for better results."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is Hotstar (Disney+ Hotstar) advertising?",
+            "answer": "Disney+ Hotstar is one of India's largest streaming platforms with over 500 million users. Hotstar advertising allows brands to place video ads before, during, or after premium content — including live sports like IPL, T20 World Cup, Hollywood movies, and popular web series. It offers a highly engaged, captive audience in a premium viewing environment."
+          },
+          {
+            "question": "What ad formats are available on Hotstar?",
+            "answer": "Hotstar supports several ad formats including pre-roll ads (before content starts), mid-roll ads (during content), display banners, L-band overlays (during live streaming), and branded content integrations. We recommend the best format mix based on your campaign objectives — whether brand awareness, recall, or direct response."
+          },
+          {
+            "question": "Can Hotstar campaigns target specific regions or languages?",
+            "answer": "Yes. Hotstar offers granular geographic targeting at the state, city, and regional level — ideal for regional brands or national brands running localised campaigns. You can also target by content language (Hindi, Tamil, Telugu, Kannada, etc.) to reach specific linguistic audiences."
+          },
+          {
+            "question": "Is OTT advertising more effective than traditional TV advertising?",
+            "answer": "OTT advertising on Hotstar offers several advantages over traditional TV: precise audience targeting (vs. broad broadcast), no time-slot dependency, measurable performance metrics (impressions, view-through rate, reach), ad-skipping control, and full-screen engagement on connected devices. For reaching digital-first and premium audiences, OTT often delivers better ROI than traditional TV."
+          },
+          {
+            "question": "How is Hotstar campaign performance tracked and reported?",
+            "answer": "We receive detailed campaign performance data including total impressions, unique reach, view-through rate, frequency, completion rate, and geographic distribution. For brand awareness objectives, we can also run brand lift studies. All data is compiled into monthly performance reports with clear insights and recommendations for the next campaign cycle."
+          }
+        ]
+      },
+      {
+        "slug": "influencer-marketing",
+        "title": "Influencer Marketing",
+        "description": "Scale brand awareness, trust, and conversions through creator-led campaigns that connect your brand with highly engaged, niche audiences — from micro-influencers to macro creators across Instagram and YouTube.",
+        "pointers": [
+          "Influencer Discovery & Vetting",
+          "Influencer Outreach",
+          "Campaign Strategy",
+          "Content Collaboration",
+          "Creator Partnerships",
+          "Instagram Influencer Campaigns",
+          "YouTube Influencer Campaigns",
+          "Micro Influencer Marketing",
+          "Macro Influencer Marketing",
+          "Performance Tracking & Reporting"
+        ],
+        "image": "/assets/services/influencer-marketing.png",
+        "directAnswer": "Influencer Marketing is a strategy where brands collaborate with social media creators — people with engaged, loyal followings — to authentically promote products or services to their audience. It works because consumers trust creator recommendations 4x more than traditional advertising. Campaigns can leverage micro-influencers (10K–100K followers) for niche, high-engagement reach, or macro-influencers (100K–1M+) for broad brand awareness — with performance fully tracked through reach, engagement, and conversion metrics.",
+        "industries": [
+          {
+            "name": "Fashion & Apparel",
+            "useCase": "Drive product launches and brand awareness through creator try-ons and styling content"
+          },
+          {
+            "name": "Beauty & Skincare",
+            "useCase": "Build trust and trials through authentic reviews and tutorials from beauty creators"
+          },
+          {
+            "name": "Food & Beverage",
+            "useCase": "Drive restaurant visits and product trials through food creator campaigns"
+          },
+          {
+            "name": "Fitness & Wellness",
+            "useCase": "Reach health-conscious audiences through fitness creators and lifestyle influencers"
+          },
+          {
+            "name": "Travel & Lifestyle",
+            "useCase": "Inspire bookings and experiences through travel creator campaigns"
+          },
+          {
+            "name": "Technology & Gadgets",
+            "useCase": "Demonstrate product features and drive purchases through tech creator reviews"
+          },
+          {
+            "name": "Finance & FinTech",
+            "useCase": "Build trust and drive app downloads through finance content creators"
+          },
+          {
+            "name": "Education & Ed-Tech",
+            "useCase": "Drive course enrollments through student and educator creator partnerships"
+          }
+        ],
+        "relatedServices": [
+          "social-media-marketing",
+          "paid-media",
+          "hotstar-marketing"
+        ],
+        "process": [
+          {
+            "step": "01",
+            "title": "Discovery & Vetting",
+            "description": "We identify influencers aligned with your brand values, audience demographics, and niche — analysing engagement authenticity, audience quality, and past brand collaborations before recommending any creator."
+          },
+          {
+            "step": "02",
+            "title": "Outreach & Partnership",
+            "description": "We handle all influencer outreach, negotiation, and contract management — securing fair rates, clear deliverables, and usage rights that protect your brand."
+          },
+          {
+            "step": "03",
+            "title": "Campaign Execution",
+            "description": "We brief creators with detailed content guidelines, review deliverables before publishing, and coordinate posting schedules for maximum campaign impact across platforms."
+          },
+          {
+            "step": "04",
+            "title": "Tracking & Reporting",
+            "description": "We track reach, impressions, engagement, website traffic, conversions, and earned media value — delivering a full post-campaign report with ROI analysis and learnings."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How do you find and select the right influencers for my brand?",
+            "answer": "We use a combination of influencer discovery tools and manual vetting to identify creators who genuinely align with your brand — not just those with the highest follower count. We analyse engagement rate, audience demographics, content quality, authenticity, and previous brand collaborations before recommending any influencer. Every partnership is strategic, not random."
+          },
+          {
+            "question": "Do you work with micro-influencers?",
+            "answer": "Yes, and we strongly recommend micro-influencers (10K–100K followers) for most campaigns. Micro-influencers typically have 3–5x higher engagement rates than mega-influencers, more authentic audience relationships, and niche-specific credibility. They're often more cost-effective and deliver better conversions for direct-response campaigns. We build the right mix of micro and macro influencers based on your goals."
+          },
+          {
+            "question": "How is influencer campaign performance measured?",
+            "answer": "We track a range of metrics depending on campaign objectives: reach and impressions (awareness), engagement rate and comments (interest), website clicks and promo code usage (conversions), follower growth, and earned media value. For e-commerce clients, we set up trackable affiliate links and unique discount codes to attribute revenue directly to influencer campaigns."
+          },
+          {
+            "question": "What industries benefit most from influencer marketing?",
+            "answer": "Influencer marketing works exceptionally well for fashion and lifestyle, beauty and personal care, food and beverage, fitness and wellness, travel, technology and gadgets, and e-commerce brands. However, with the right creator match, virtually any B2C brand can benefit. We've run effective influencer campaigns across diverse categories and tailor the strategy to your product and audience."
+          },
+          {
+            "question": "Can influencer-created content be repurposed for paid ads?",
+            "answer": "Yes, and this is one of the most powerful applications of influencer content. User-generated content (UGC) and influencer videos often outperform brand-produced creatives in paid social ads because they feel authentic and trustworthy. We negotiate content usage rights as part of influencer contracts so you can repurpose top-performing content across Meta Ads, YouTube Ads, and other channels."
+          }
+        ]
       }
     ]
   },

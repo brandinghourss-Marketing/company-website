@@ -44,8 +44,29 @@ const socialLinks = [
   { name: "YouTube", href: "https://www.youtube.com/@Brandinghourhours" },
 ];
 
+const SERVICE_OPTIONS = [
+  { value: "seo", label: "SEO, AEO & GEO" },
+  { value: "social-media-marketing", label: "Social Media Marketing" },
+  { value: "paid-media", label: "Paid Media Marketing" },
+  { value: "web-dev", label: "Website Development" },
+  { value: "branding", label: "Branding, Design & Brand Strategy" },
+  { value: "photography", label: "Photography & Product Shoot" },
+  { value: "hotstar-marketing", label: "Hotstar Marketing & OTT Advertising" },
+  { value: "influencer-marketing", label: "Influencer Marketing" },
+  { value: "other", label: "Other / Not Sure Yet" },
+];
+
 const ContactSection = () => {
   const sectionRef = useRef(null);
+  const serviceSelectRef = useRef(null);
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const serviceParam = params.get("service");
+    if (serviceParam && serviceSelectRef.current) {
+      serviceSelectRef.current.value = serviceParam;
+    }
+  }, []);
 
   useGSAP(() => {
     if (!sectionRef.current) return;
@@ -222,18 +243,15 @@ const ContactSection = () => {
                   Service Interested In
                 </label>
                 <select
+                  ref={serviceSelectRef}
                   id="service"
                   name="service"
                   className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-neutral-900 outline-none transition-all duration-300 focus:border-accent-electric focus:ring-2 focus:ring-accent-electric/10"
                 >
                   <option value="">Select a service</option>
-                  <option value="seo">Search Engine Optimization (SEO)</option>
-                  <option value="smo">Social Media Optimization (SMO)</option>
-                  <option value="paid-media">Paid Media Marketing</option>
-                  <option value="web-dev">Website Development</option>
-                  <option value="branding">Branding</option>
-                  <option value="photography">Photography</option>
-                  <option value="other">Other</option>
+                  {SERVICE_OPTIONS.map((opt) => (
+                    <option key={opt.value} value={opt.value}>{opt.label}</option>
+                  ))}
                 </select>
               </div>
 

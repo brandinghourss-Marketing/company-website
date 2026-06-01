@@ -17,11 +17,54 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Branding Hours",
-  description: "Where Clicks Turn Into Clients and Your Brand Speaks Success",
+  title: "Branding Hours | Digital Marketing & Branding Agency India",
+  description: "Branding Hours is a full-service digital growth agency offering SEO, AEO, GEO, Social Media Marketing, Paid Media, Website Development, Branding, Hotstar Marketing, and Influencer Marketing across India.",
+  metadataBase: new URL("https://brandinghours.com"),
   icons: {
     icon: "/assets/common/logo6.png",
     apple: "/assets/common/logo6.png",
+  },
+  openGraph: {
+    siteName: "Branding Hours",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Branding Hours",
+  url: "https://brandinghours.com",
+  logo: "https://brandinghours.com/assets/common/logo6.png",
+  description: "Full-service digital growth agency offering SEO, AEO, GEO, Social Media Marketing, Paid Media Marketing, Website Development, Branding, Hotstar Marketing, and Influencer Marketing.",
+  telephone: "+91-9871741353",
+  email: "contact@brandinghours.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Plot no 10, Ghyan khand - 2, Shop - 3, Indirapuram",
+    addressLocality: "Ghaziabad",
+    addressRegion: "Uttar Pradesh",
+    postalCode: "201010",
+    addressCountry: "IN",
+  },
+  sameAs: [
+    "https://www.instagram.com/brandinghours_com/",
+    "https://www.facebook.com/profile.php?id=61576789070336",
+    "https://www.linkedin.com/company/107387708/",
+    "https://www.youtube.com/@Brandinghourhours",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Branding Hours",
+  url: "https://brandinghours.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://brandinghours.com/services",
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -29,6 +72,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"

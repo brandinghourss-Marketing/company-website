@@ -5,7 +5,18 @@ import React from "react";
 const navLinks = [
   { name: "About us", href: "/about" },
   { name: "Services", href: "/services" },
+  { name: "Portfolio", href: "/portfolio" },
   { name: "Contact", href: "/contact" },
+];
+
+const footerServiceLinks = [
+  { name: "SEO, AEO & GEO", href: "/services/seo" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+  { name: "Paid Media Marketing", href: "/services/paid-media" },
+  { name: "Website Development", href: "/services/web-dev" },
+  { name: "Branding, Design & Brand Strategy", href: "/services/branding" },
+  { name: "Hotstar Marketing", href: "/services/hotstar-marketing" },
+  { name: "Influencer Marketing", href: "/services/influencer-marketing" },
 ];
 
 const socialLinks = [
@@ -61,8 +72,8 @@ const Footer = () => {
 
       {/* Main footer content */}
       <div className="px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24 pt-16 pb-8">
-        {/* Top section: 3-column grid */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
+        {/* Top section: 4-column grid */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-16">
           {/* Column 1: Brand + Nav */}
           <div className="flex flex-col gap-8">
             <Link href="/" className="w-fit">
@@ -90,7 +101,27 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Column 2: Address */}
+          {/* Column 2: Services */}
+          <div className="flex flex-col gap-4">
+            <h4 className="text-xs font-semibold text-white/60 tracking-widest uppercase">Services</h4>
+            <nav>
+              <ul className="flex flex-col gap-3">
+                {footerServiceLinks.map((link, i) => (
+                  <li key={i}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-white/50 hover:text-white transition-colors relative group inline-block"
+                    >
+                      {link.name}
+                      <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-accent-electric transition-all duration-300 group-hover:w-full" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
+          {/* Column 3: Address */}
           <div className="flex flex-col gap-4">
             <h4 className="text-xs font-semibold text-white/60 tracking-widest uppercase">Find Us</h4>
             <address className="not-italic text-sm text-white/40 leading-relaxed">

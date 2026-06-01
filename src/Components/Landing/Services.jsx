@@ -114,8 +114,7 @@ const Services = ({ variant = "homepage" }) => {
               title={service.title}
               description={service.description}
               pointers={service.pointers}
-              buttonText={content.buttonText}
-              buttonLink={content.buttonLink}
+              slug={service.slug}
               image={service.image}
             />
           ))}
@@ -132,8 +131,7 @@ const ServiceCard = ({
   title,
   description,
   pointers,
-  buttonText,
-  buttonLink,
+  slug,
   image,
 }) => {
   const cardRef = useRef(null);
@@ -320,11 +318,11 @@ const ServiceCard = ({
         </p>
 
         <Link
-          href={buttonLink || "/contact"}
+          href={slug ? `/services/${slug}` : "/contact"}
           data-service-btn
           className="btn-gradient-filled text-base w-fit mt-2 group"
         >
-          {buttonText}
+          Learn More
           <svg
             className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             fill="none"
