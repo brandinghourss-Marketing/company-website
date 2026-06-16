@@ -1,0 +1,82 @@
+{
+  "us": {
+    "code": "us",
+    "name": "United States",
+    "demonym": "US",
+    "hero": {
+      "label": "Digital Marketing Agency for US Businesses",
+      "title": "Grow Your US Brand with a Results-Driven Marketing Partner",
+      "description": "Branding Hours helps US businesses rank on Google, win customers through paid ads, and build brands that convert — with the quality of a global agency at a smart, scalable price."
+    },
+    "intro": "From startups to established brands, US companies choose Branding Hours for full-funnel digital marketing that delivers measurable results. We combine SEO, paid media, web development, and branding under one roof, so you get a single accountable partner for growth.",
+    "localPoints": [
+      { "title": "US Time Zone Coverage", "text": "We work across EST and PST hours, so communication and reporting fit your schedule." },
+      { "title": "Built for the US Market", "text": "Campaigns, messaging, and keywords tailored to American audiences and search behaviour." },
+      { "title": "Transparent USD Pricing", "text": "Clear, scalable pricing in US dollars with no hidden fees — you always know what you're paying for." }
+    ],
+    "faqs": [
+      { "question": "Do you work with small businesses in the US?", "answer": "Yes. We work with US businesses of all sizes, from local startups to established brands. Our packages scale to your goals and budget, so you only invest in what drives growth." },
+      { "question": "How do you handle the time difference?", "answer": "Our team coordinates across US business hours (EST and PST) for calls, updates, and reporting. Most clients find communication seamless, with fast responses and regular check-ins." }
+    ]
+  },
+  "uk": {
+    "code": "uk",
+    "name": "United Kingdom",
+    "demonym": "UK",
+    "hero": {
+      "label": "Digital Marketing Agency for UK Brands",
+      "title": "Helping UK Businesses Grow Online with SEO & Paid Media",
+      "description": "Branding Hours partners with UK brands to improve search rankings, run high-performing ad campaigns, and build websites that turn visitors into customers."
+    },
+    "intro": "UK businesses trust Branding Hours for full-service digital marketing that combines strategy, creativity, and measurable performance. Whether you need to climb Google's rankings or scale paid campaigns profitably, we deliver work tailored to the UK market.",
+    "localPoints": [
+      { "title": "GMT Working Hours", "text": "We align with UK business hours for smooth, timely communication and reporting." },
+      { "title": "UK Market Experience", "text": "Strategy, tone, and keywords optimised for UK audiences and British English." },
+      { "title": "Clear GBP Pricing", "text": "Straightforward pricing in pounds with transparent deliverables and no surprises." }
+    ],
+    "faqs": [
+      { "question": "Can you help my UK business rank on Google?", "answer": "Absolutely. We deliver SEO tailored to UK search behaviour — from technical fixes and local SEO to content and link building — helping your brand rank for the terms your customers actually search." },
+      { "question": "Do you use UK English in content?", "answer": "Yes. All content is written in British English with spelling, tone, and references that resonate with UK audiences, so your brand feels local and credible." }
+    ]
+  },
+  "ca": {
+    "code": "ca",
+    "name": "Canada",
+    "demonym": "Canadian",
+    "hero": {
+      "label": "Digital Marketing Agency for Canadian Businesses",
+      "title": "Digital Growth for Canadian Brands That Want Results",
+      "description": "Branding Hours helps Canadian businesses grow through SEO, Google and Meta Ads, web development, and branding — strategy and execution built around your market."
+    },
+    "intro": "Canadian brands work with Branding Hours for marketing that's strategic, measurable, and tailored to their market. We bring together SEO, paid media, and design to help you attract the right customers and grow profitably across Canada.",
+    "localPoints": [
+      { "title": "Canadian Time Zones", "text": "We coordinate across Canadian business hours for clear, convenient communication." },
+      { "title": "Local Market Knowledge", "text": "Campaigns and content shaped around Canadian audiences and search trends." },
+      { "title": "CAD Pricing", "text": "Transparent pricing in Canadian dollars, scaled to your goals and budget." }
+    ],
+    "faqs": [
+      { "question": "Do you understand the Canadian market?", "answer": "Yes. We tailor strategy, keywords, and messaging to Canadian audiences and search behaviour, helping your brand connect with local customers and stand out from competitors." },
+      { "question": "Which services do Canadian clients use most?", "answer": "Canadian clients commonly combine SEO, Google Ads, social media marketing, and web development — a full-funnel approach that builds visibility and converts it into leads and sales." }
+    ]
+  },
+  "au": {
+    "code": "au",
+    "name": "Australia",
+    "demonym": "Australian",
+    "hero": {
+      "label": "Digital Marketing Agency for Australian Businesses",
+      "title": "Helping Australian Brands Grow Online, Profitably",
+      "description": "Branding Hours delivers SEO, paid media, and website development for Australian businesses — measurable digital growth built around the local market."
+    },
+    "intro": "Australian businesses choose Branding Hours for full-service digital marketing that's strategic and results-focused. From climbing Google's rankings to scaling profitable ad campaigns, we tailor every engagement to the Australian market.",
+    "localPoints": [
+      { "title": "AEST Coverage", "text": "We work across Australian Eastern hours for smooth communication and reporting." },
+      { "title": "Australian Market Fit", "text": "Strategy, tone, and keywords optimised for Australian audiences and Australian English." },
+      { "title": "AUD Pricing", "text": "Clear, scalable pricing in Australian dollars with transparent deliverables." }
+    ],
+    "faqs": [
+      { "question": "Do you work with Australian small businesses?", "answer": "Yes. We support Australian businesses of every size with scalable packages, helping local brands compete and grow through SEO, paid media, and high-converting websites." },
+      { "question": "How do you manage the time difference?", "answer": "We align with AEST business hours for calls and updates, and provide regular reporting — so working across time zones feels effortless and responsive." }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "hero": {
+    "label": "Blog & Resources",
+    "title": "Insights on SEO, Ads & Digital Growth",
+    "description": "Practical, no-fluff guides on SEO, paid media, and digital marketing — written by the Branding Hours team to help your brand grow."
+  },
+  "posts": [
+    {
+      "slug": "how-to-improve-website-seo-2026",
+      "title": "How to Improve Your Website SEO in 2026: A Step-by-Step Guide",
+      "excerpt": "A practical, beginner-friendly guide to improving your website's SEO in 2026 — covering technical fixes, content, keywords, and the new world of AI search.",
+      "category": "SEO",
+      "author": "Branding Hours",
+      "date": "2026-02-10",
+      "readTime": "8 min read",
+      "image": "/assets/services/Seo.png",
+      "intro": "SEO in 2026 is no longer just about ranking on Google — it is also about being cited by AI tools like ChatGPT, Perplexity, and Google's AI Overviews. The good news: the fundamentals that win on Google also win on AI. Here is a clear, step-by-step approach you can follow this year.",
+      "body": [
+        { "type": "h2", "text": "What is SEO and why does it still matter in 2026?" },
+        { "type": "p", "text": "SEO (Search Engine Optimization) is the practice of improving your website so it ranks higher in unpaid search results and gets recommended by AI search tools. It matters because organic search remains the largest source of website traffic for most businesses, and unlike ads, it keeps working without ongoing spend." },
+        { "type": "h2", "text": "Step 1: Fix your technical foundation" },
+        { "type": "p", "text": "Before content or keywords can help, search engines need to crawl and understand your site. Get these basics right first:" },
+        { "type": "ul", "items": [
+          "Submit an XML sitemap and verify your site in Google Search Console.",
+          "Make sure every page loads over HTTPS and works perfectly on mobile.",
+          "Add structured data (schema markup) so Google and AI tools understand your business.",
+          "Check that no important pages are blocked in your robots file."
+        ] },
+        { "type": "h2", "text": "Step 2: Pass Core Web Vitals" },
+        { "type": "p", "text": "Google ranks fast, stable websites higher. Aim for your main content to appear in under 2.5 seconds (LCP), respond to clicks in under 200ms (INP), and avoid layout shifts (CLS under 0.1). Compress images to WebP, reduce heavy scripts, and use a CDN to speed up loading for international visitors." },
+        { "type": "h2", "text": "Step 3: Target the right keywords" },
+        { "type": "p", "text": "Focus on keywords that match real buying intent, not just high search volume. A page targeting \"affordable website design for small business\" will convert far better than one chasing a vague term like \"design\". Map one primary keyword to each page and build genuinely helpful content around it." },
+        { "type": "h2", "text": "Step 4: Write content that wins featured snippets and AI citations" },
+        { "type": "p", "text": "Structure your pages so search engines and AI tools can lift a clean answer. The format that works in 2026:" },
+        { "type": "ol", "items": [
+          "Write a clear question as your heading (H2).",
+          "Give a direct 40 to 60 word answer immediately below it, with no preamble.",
+          "Add supporting detail — bullet points, steps, or a table.",
+          "Add FAQ schema so search engines recognise the Q&A format."
+        ] },
+        { "type": "h2", "text": "Step 5: Build authority with backlinks and mentions" },
+        { "type": "p", "text": "Google trusts sites that other reputable sites link to, and AI tools recommend brands mentioned across many reliable sources. Earn links through quality content, list your business in trusted directories, and get featured on industry blogs. Even a few high-quality backlinks can move the needle significantly." },
+        { "type": "h2", "text": "How long does SEO take to work?" },
+        { "type": "p", "text": "Most websites see measurable improvement within 3 to 6 months, with stronger results in 6 to 12 months for competitive niches. SEO compounds over time — the work you do now keeps paying off long after it is published." }
+      ],
+      "faqs": [
+        { "question": "Can I do SEO myself or do I need an agency?", "answer": "You can handle the basics yourself — fixing titles, writing helpful content, and submitting a sitemap. An agency helps when you want faster results, technical depth, or to compete in a tough market. Many businesses start solo and bring in experts as they grow." },
+        { "question": "Is SEO still worth it with AI search?", "answer": "Yes, more than ever. AI tools like ChatGPT and Google's AI Overviews pull their answers from well-optimised websites. The same clear, structured, authoritative content that ranks on Google is what gets your brand cited by AI." }
+      ]
+    },
+    {
+      "slug": "how-to-run-google-ads-small-business",
+      "title": "How to Run Google Ads for a Small Business: A Beginner's Guide",
+      "excerpt": "New to Google Ads? This step-by-step guide walks small business owners through setting up their first profitable campaign without wasting budget.",
+      "category": "Paid Media",
+      "author": "Branding Hours",
+      "date": "2026-03-18",
+      "readTime": "7 min read",
+      "image": "/assets/services/paid-media.png",
+      "intro": "Google Ads can bring customers to your door within hours — but it can also drain your budget fast if set up carelessly. This guide breaks down exactly how a small business should launch its first campaign, step by step.",
+      "body": [
+        { "type": "h2", "text": "What is Google Ads and how does it work?" },
+        { "type": "p", "text": "Google Ads is a pay-per-click advertising platform where you bid on keywords and pay only when someone clicks your ad. Your ads can appear at the top of Google search results, on YouTube, and across millions of partner sites — putting your business in front of people actively searching for what you offer." },
+        { "type": "h2", "text": "Step 1: Define one clear goal" },
+        { "type": "p", "text": "Before spending a rupee, decide what success looks like: phone calls, form submissions, store visits, or online sales. A single, measurable goal keeps your campaign focused and makes it easy to judge whether your ads are working." },
+        { "type": "h2", "text": "Step 2: Choose the right campaign type" },
+        { "type": "p", "text": "For most small businesses starting out, a Search campaign is the best choice — it shows text ads to people actively searching for your product or service, which means high intent and better conversion rates. Save Display and video campaigns for later, once you understand what converts." },
+        { "type": "h2", "text": "Step 3: Pick high-intent keywords" },
+        { "type": "p", "text": "Target keywords that signal someone is ready to act, such as \"emergency plumber near me\" or \"buy running shoes online\". Use phrase and exact match to stay focused, and add negative keywords (like \"free\" or \"jobs\") to stop wasting budget on irrelevant clicks." },
+        { "type": "h2", "text": "Step 4: Write ads that get clicks" },
+        { "type": "p", "text": "Strong ads share a few traits:" },
+        { "type": "ul", "items": [
+          "Include your main keyword in the headline.",
+          "Highlight what makes you different — free delivery, 24/7 service, a guarantee.",
+          "End with a clear call to action like \"Get a Free Quote\".",
+          "Use ad extensions to add your phone number, location, and links."
+        ] },
+        { "type": "h2", "text": "Step 5: Set a budget and track conversions" },
+        { "type": "p", "text": "Start with a modest daily budget you are comfortable testing — you can scale up what works. Crucially, set up conversion tracking before you launch, so you know which clicks turn into real customers. Without it, you are flying blind." },
+        { "type": "h2", "text": "How much should a small business spend on Google Ads?" },
+        { "type": "p", "text": "There is no fixed number, but many small businesses start between a few hundred and a few thousand rupees or dollars per month, then scale based on return on ad spend. Begin small, measure what each customer costs you, and increase budget only on campaigns that turn a profit." }
+      ],
+      "faqs": [
+        { "question": "How quickly do Google Ads show results?", "answer": "Almost immediately. Once approved, your ads can start showing within hours and driving traffic the same day. Unlike SEO, which builds over months, Google Ads delivers instant visibility — making it ideal for launches, promotions, and testing demand." },
+        { "question": "Why am I getting clicks but no sales?", "answer": "This usually means a mismatch between your ad and your landing page, weak keywords, or a confusing checkout. Make sure your landing page delivers exactly what the ad promised, loads fast, and has a single clear call to action." }
+      ]
+    },
+    {
+      "slug": "what-is-performance-marketing",
+      "title": "What Is Performance Marketing? A Complete Guide for Brands",
+      "excerpt": "Performance marketing ties every rupee of ad spend to measurable results. Here's how it works, the channels involved, and the metrics that matter.",
+      "category": "Performance Marketing",
+      "author": "Branding Hours",
+      "date": "2026-04-22",
+      "readTime": "6 min read",
+      "image": "/assets/services/paid-media.png",
+      "intro": "Traditional advertising asks you to pay for exposure and hope it works. Performance marketing flips that model — you pay for measurable outcomes and can prove the return on every campaign. Here is how it works.",
+      "body": [
+        { "type": "h2", "text": "What is performance marketing?" },
+        { "type": "p", "text": "Performance marketing is a results-driven approach to advertising where you pay for specific, measurable actions — clicks, leads, or sales — rather than just impressions. Every campaign is tracked against clear goals, so you always know exactly what your marketing budget is delivering." },
+        { "type": "h2", "text": "How is it different from traditional marketing?" },
+        { "type": "p", "text": "Traditional marketing — billboards, print, untracked brand campaigns — is hard to measure. Performance marketing is built on data: every click and conversion is tracked, so you can see what works, cut what doesn't, and scale what delivers profit. It turns marketing from a cost into a measurable investment." },
+        { "type": "h2", "text": "The core channels of performance marketing" },
+        { "type": "ul", "items": [
+          "Paid search (Google Ads) — capture high-intent customers as they search.",
+          "Paid social (Meta, LinkedIn, YouTube) — reach and retarget specific audiences.",
+          "Affiliate and influencer marketing — pay partners for the results they drive.",
+          "Email and remarketing — convert people who already know your brand."
+        ] },
+        { "type": "h2", "text": "Which metrics matter most?" },
+        { "type": "p", "text": "Performance marketing lives and dies by its numbers. The key ones to watch:" },
+        { "type": "ol", "items": [
+          "ROAS (Return on Ad Spend) — revenue earned per unit of ad spend.",
+          "CPA (Cost Per Acquisition) — what it costs to win one customer.",
+          "Conversion rate — the percentage of visitors who take action.",
+          "CTR (Click-Through Rate) — how compelling your ads are."
+        ] },
+        { "type": "h2", "text": "Is performance marketing right for your business?" },
+        { "type": "p", "text": "If you want predictable, measurable growth and the ability to prove return on investment, performance marketing is a strong fit. It works best when paired with a fast, conversion-focused website and clear tracking — so every click has the best chance of becoming a customer." }
+      ],
+      "faqs": [
+        { "question": "Is performance marketing only about paid ads?", "answer": "Paid ads are the core, but performance marketing also includes affiliate, influencer, email, and remarketing — any channel where you can measure and pay for results. The defining feature is accountability: every rupee is tied to a measurable outcome." },
+        { "question": "How is ROAS different from ROI?", "answer": "ROAS measures revenue earned per unit of ad spend, focusing on advertising efficiency. ROI measures overall profit after all costs. ROAS is the day-to-day metric for optimising campaigns; ROI tells you whether the whole effort is profitable for the business." }
+      ]
+    }
+  ]
+}

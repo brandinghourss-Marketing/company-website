@@ -20,6 +20,9 @@ export const metadata = {
   title: "Branding Hours | Digital Marketing & Branding Agency India",
   description: "Branding Hours is a full-service digital growth agency offering SEO, AEO, GEO, Social Media Marketing, Paid Media, Website Development, Branding, Hotstar Marketing, and Influencer Marketing across India.",
   metadataBase: new URL("https://brandinghours.com"),
+  verification: {
+    google: "K9SGC_XvCAr1rRz5Oy1lNROBCxUIPdQTKE_9nbWCVuY",
+  },
   icons: {
     icon: "/assets/common/logo6.png",
     apple: "/assets/common/logo6.png",
@@ -68,6 +71,39 @@ const websiteSchema = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://brandinghours.com/#localbusiness",
+  name: "Branding Hours",
+  image: "https://brandinghours.com/assets/common/logo6.png",
+  url: "https://brandinghours.com",
+  telephone: "+91-9871741353",
+  email: "contact@brandinghours.com",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Plot no 10, Ghyan khand - 2, Shop - 3, Indirapuram",
+    addressLocality: "Ghaziabad",
+    addressRegion: "Uttar Pradesh",
+    postalCode: "201010",
+    addressCountry: "IN",
+  },
+  areaServed: [
+    { "@type": "Country", name: "India" },
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "United Kingdom" },
+    { "@type": "Country", name: "Canada" },
+    { "@type": "Country", name: "Australia" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/brandinghours_com/",
+    "https://www.facebook.com/profile.php?id=61576789070336",
+    "https://www.linkedin.com/company/107387708/",
+    "https://www.youtube.com/@Brandinghourhours",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -79,6 +115,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
         {/* Google Tag Manager */}
         <Script

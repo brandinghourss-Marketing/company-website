@@ -1,0 +1,54 @@
+{
+  "_README": "TEMPLATE — replace every value marked 'XX' with REAL, verified numbers before setting published:true. Do not publish placeholder metrics. The index and detail pages only list studies where published is true.",
+  "hero": {
+    "label": "Case Studies",
+    "title": "Real Brands. Real Results.",
+    "description": "A closer look at how we help brands grow — the challenges they faced, the strategies we ran, and the measurable results we delivered."
+  },
+  "studies": [
+    {
+      "slug": "ever-growwl",
+      "published": false,
+      "client": "Ever Growwl",
+      "industry": "Pet Food & Nutrition",
+      "url": "https://www.evergrowwl.com/",
+      "image": "/assets/services/web-dev.png",
+      "summary": "How we helped a natural pet nutrition brand grow its online store and organic visibility.",
+      "services": ["web-dev", "seo", "paid-media"],
+      "challenge": "Ever Growwl had a quality product line of farm-fresh dog treats but limited online visibility and a store that needed to convert browsers into buyers. The goal was to build a fast, trustworthy e-commerce experience and drive qualified traffic to it.",
+      "approach": [
+        "Designed and built a conversion-focused e-commerce store with clear product storytelling.",
+        "Implemented technical SEO and product-page optimisation to capture pet-nutrition searches.",
+        "Launched targeted paid campaigns to reach pet owners with high purchase intent."
+      ],
+      "results": [
+        { "metric": "XX%", "label": "Increase in organic traffic" },
+        { "metric": "XX%", "label": "Growth in online orders" },
+        { "metric": "XX", "label": "Return on ad spend (ROAS)" }
+      ],
+      "quote": { "text": "Add a real client testimonial here.", "author": "Client name, role" }
+    },
+    {
+      "slug": "zenb",
+      "published": false,
+      "client": "ZENB",
+      "industry": "Fashion",
+      "url": "https://zenb.ae/",
+      "image": "/assets/services/branding.png",
+      "summary": "How we elevated a UAE fashion retailer's brand presence and online performance.",
+      "services": ["branding", "social-media-marketing", "paid-media"],
+      "challenge": "ZENB, an elegant women's fashion retailer in the UAE, needed a stronger digital brand presence and a social strategy that matched the sophistication of its products while driving online sales.",
+      "approach": [
+        "Refined the visual brand identity for a consistent, premium feel across channels.",
+        "Built a social media content strategy tailored to the UAE fashion audience.",
+        "Ran paid social campaigns optimised for reach and conversions."
+      ],
+      "results": [
+        { "metric": "XX%", "label": "Growth in social engagement" },
+        { "metric": "XX%", "label": "Increase in website sessions" },
+        { "metric": "XX%", "label": "Uplift in online conversions" }
+      ],
+      "quote": { "text": "Add a real client testimonial here.", "author": "Client name, role" }
+    }
+  ]
+}

@@ -6,7 +6,17 @@ const navLinks = [
   { name: "About us", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
+  { name: "Blog", href: "/blog" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Glossary", href: "/glossary" },
   { name: "Contact", href: "/contact" },
+];
+
+const regionLinks = [
+  { name: "United States", href: "/us" },
+  { name: "United Kingdom", href: "/uk" },
+  { name: "Canada", href: "/ca" },
+  { name: "Australia", href: "/au" },
 ];
 
 const footerServiceLinks = [
@@ -174,6 +184,24 @@ const Footer = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Regions we serve */}
+        <div className="max-w-7xl mx-auto mb-8">
+          <h4 className="text-xs font-semibold text-white/60 tracking-widest uppercase mb-4">Regions We Serve</h4>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            {regionLinks.map((link, i) => (
+              <li key={i}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-white/50 hover:text-white transition-colors relative group inline-block"
+                >
+                  {link.name}
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-accent-electric transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Divider */}
