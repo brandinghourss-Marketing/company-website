@@ -42,3 +42,8 @@ jobs:
           server-dir: public_html/
           protocol: ftps
           port: 21
+          dangerous-clean-slate: true   # one-time full re-upload; remove after the next successful deploy
+          exclude: |
+            **/.DS_Store
+            **/.git*
+            **/node_modules/**
